@@ -4,17 +4,22 @@ import Link from 'next/link'
 export default function SearchHit({ hit }) {
   return (
     <article className="m-2 border border-gray-200 p-2">
-      <h1 className="font-bold">
-        <Link href={hit.slug}>
-          <a className="hover:text-primary-500">
+        <Link href={`/docs/${hit.slug}`}>
+          <a className="hover:text-gray-600">
             <Highlight attribute="title" hit={hit} />
+            <p className="pt-1 text-gray-600 text-sm">{hit.summary}</p>
+            <div class="flex space-x-2">
+                {hit.tags.map(
+                    (tag) => (
+                        <>
+                        <Highlight attribute="tags" hit={hit} />
+                        
+                       </>
+                      )
+                )}
+            </div>
           </a>
         </Link>
-      </h1>
-      <p className="text-sm">{hit.summary}</p>
-      <p className="text-xs tracking-tight">
-        <Highlight attribute="tags" hit={hit} />
-      </p>
     </article>
   )
 }

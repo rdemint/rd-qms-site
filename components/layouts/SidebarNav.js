@@ -51,10 +51,11 @@ export default function SidebarNav() {
         <section id="sidebars">
             <button
                 type="button"
-                className="focus:ring-primary border-r border-gray-200 px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset md:hidden hover:text-gray-800 hover:bg-gray-100 rounded"
+                className="focus:ring-primary text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset md:hidden hover:text-gray-800 hover:bg-gray-100 rounded"
                 onClick={() => setSidebarOpen(true)}
             >
                 <span className="sr-only">Open sidebar</span>
+                
                 <Bars3BottomLeftIcon className="h-6 w-6" aria-hidden="true" />
             </button>
             <section id="mobile-sidebar">
@@ -113,9 +114,9 @@ export default function SidebarNav() {
             </section>
             <section id="desktop-sidebar">
                 <div className="t-0 sticky hidden h-full w-96 pl-4 md:block">
-                    <div className="m-2">
-                        <SearchModal />
-                    </div>
+                    {/*<div className="m-2">*/}
+                    {/*    <SearchModal />*/}
+                    {/*</div>*/}
                     <div className="flex flex-grow flex-col overflow-y-auto border-gray-200">
                         <div className="flex flex-grow flex-col">
                             <NavItems />

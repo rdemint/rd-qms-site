@@ -15,7 +15,7 @@ export default function SearchModal() {
       <input
         type="text"
         onClick={handleSearchClick}
-        className="rounded border-gray-500"
+        className="rounded border p-1 mb-1 border-gray-200 max-w-xs"
         placeholder="Search"
       />
       <Transition.Root show={open} as={Fragment}>
@@ -52,7 +52,7 @@ export default function SearchModal() {
                     </div>
                   </div>
                   <div className="spacing-x-4 flex flex-row items-center justify-between">
-                    {/*<AlgoliaSearchBox />*/}
+                    <AlgoliaSearchBox />
                     <button
                       type="button"
                       className="m-2 inline-flex justify-center rounded border bg-white p-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:text-sm"

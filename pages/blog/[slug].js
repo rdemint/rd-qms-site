@@ -2,6 +2,7 @@ import matter from "gray-matter";
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import { getFileData, getPaths } from "@/lib/mdxfiles";
+import Header from '@/components/Header'
 
 export async function getStaticPaths() {
     const paths = getPaths('blog')
@@ -27,7 +28,8 @@ export async function getStaticProps(context) {
 
 export default function BlogPage({mdxSource, frontMatter}) {
     return (
-        <div className="prose">
+        <div>
+            <Header />
             <h1 className="text-2xl">{frontMatter.title}</h1>
             <div className="prose">
                 <MDXRemote {...mdxSource} />

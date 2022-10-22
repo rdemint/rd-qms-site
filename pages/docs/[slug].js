@@ -37,7 +37,7 @@ export default function DocPage({ mdxSource, frontMatter }) {
     return (
         
         <SidebarLayout>
-        <div className="flex flex-col items-center max-w-7xl px-4">
+        <div className="flex flex-col max-w-7xl px-4">
             <h1 className="text-4xl max-w-3xl text-center pt-8 pb-4 border-b-2 border-rose-200">{frontMatter.title}</h1>
             <div className="prose pt-8">
                 <MDXRemote {...mdxSource} components={components}/>

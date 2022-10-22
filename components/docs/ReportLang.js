@@ -14,10 +14,10 @@ export default function ReportLang({ children }) {
   }
 
   return (
-    <div className="my-4 rounded border border-2 border-gray-500">
+    <div className="my-4 rounded border border-2 border-gray-200">
       <div className="flex items-center justify-between bg-gray-100">
         <div className=" px-4">Example Report Notes</div>
-        <button className="m-2 rounded bg-gray-400 p-1" onClick={handleCopyClick}>
+        <button className="m-2 rounded bg-gray-300 p-1" onClick={handleCopyClick}>
           {isCopied ? 'Copied!' : 'Copy'}
         </button>
       </div>

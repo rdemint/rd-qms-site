@@ -29,7 +29,6 @@ export async function getStaticProps(context) {
 export default function BlogPage({mdxSource, frontMatter}) {
     return (
         <div>
-            <Header />
             <h1 className="text-2xl">{frontMatter.title}</h1>
             <div className="prose">
                 <MDXRemote {...mdxSource} />

@@ -3,7 +3,7 @@ import Container from '@/components/Container'
 export default function About() {
     return (
         <Container>
-        <div className="flex justify-center">
+        <div className="flex justify-center max-w-3xl mx-auto">
             <div class="prose pt-8">
             <h2>About Raines</h2>
             <p>Raines Demint is inspired by individuals and teams that strive to incrementally better the world by bringing great ideas to life.</p>

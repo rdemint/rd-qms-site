@@ -23,7 +23,7 @@ export default function BlogHome({posts}) {
             <ul role="list" className="pt-6 space-y-5">
                 {posts.map(
                     (post) => (
-                        <li className="border-l-2 border-sky-200 px-6 py-4 hover:bg-gray-50 rounded" key={post.title}>
+                        <li className="border-l-2 border-primary-200 px-6 py-4 hover:bg-gray-50 rounded" key={post.title}>
                             <Link href={`/blog/${post.slug}`}>
                                 <a className="hover:text-gray-800">
                                     {post.title}

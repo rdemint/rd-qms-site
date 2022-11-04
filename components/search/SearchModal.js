@@ -55,7 +55,7 @@ export default function SearchModal() {
                     <AlgoliaSearchBox />
                     <button
                       type="button"
-                      className="m-2 inline-flex justify-center rounded border bg-white p-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:text-sm"
+                      className="m-2 inline-flex justify-center rounded border bg-white p-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:text-sm"
                       onClick={() => setOpen(false)}
                       ref={cancelButtonRef}
                     >

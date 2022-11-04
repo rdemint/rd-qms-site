@@ -9,13 +9,13 @@ return(
         </Link>
         <section className="flex space-x-5">
             <Link href="/blog">
-                <a  className="px-3 py-1 text-primary-900 hover:text-primary-900 hover:underline underline-offset-8 decoration-accent-900">Blog</a>
+                <a  className="px-3 py-1 text-gray-900 hover:text-primary-900 hover:underline underline-offset-8 decoration-accent-900">Blog</a>
             </Link>
             <Link href="/about">
-                <a className="px-3 py-1 text-primary-900 hover:text-primary-900 hover:underline underline-offset-8 decoration-accent-900">About</a>
+                <a className="px-3 py-1 text-gray-900 hover:text-primary-900 hover:underline underline-offset-8 decoration-accent-900">About</a>
             </Link>
             <Link href="/docs">
-                <a className="px-3 py-1 text-primary-900 hover:text-primary-900 hover:underline underline-offset-8 decoration-accent-900">Docs</a>
+                <a className="px-3 py-1 text-gray-900 hover:text-primary-900 hover:underline underline-offset-8 decoration-accent-900">Docs</a>
             </Link>
         </section>
         </div>

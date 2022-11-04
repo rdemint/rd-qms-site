@@ -52,14 +52,14 @@ export default function Home() {
               </div>
               <div id="carousel-container"className="flex flex-col align-items mt-12">
                 <div className="relative flex justify-center h-10">
-                          <div className={`${current === 0 ? 'opacity-100' : 'opacity-0'} absolute transition-opacity ease-in-out duration-300 text-accent-900 text-md text-center font-light text-lg`}>"{catchphrases[0]}"</div>
-                          <div className={`${current === 1 ? 'opacity-100' : 'opacity-0'} absolute transition-opacity ease-in-out duration-300 text-accent-900 text-md text-center font-light text-lg`}>"{catchphrases[1]}"</div>
-                          <div className={`${current === 2 ? 'opacity-100' : 'opacity-0'} absolute transition-opacity ease-in-out duration-300 text-accent-900 text-md text-center font-light text-lg`}>"{catchphrases[2]}"</div>
+                          <div className={`${current === 0 ? 'opacity-100' : 'opacity-0'} absolute transition-opacity ease-in-out duration-500 text-accent-900 text-md text-center font-light text-lg`}>"{catchphrases[0]}"</div>
+                          <div className={`${current === 1 ? 'opacity-100' : 'opacity-0'} absolute transition-opacity ease-in-out duration-500 text-accent-900 text-md text-center font-light text-lg`}>"{catchphrases[1]}"</div>
+                          <div className={`${current === 2 ? 'opacity-100' : 'opacity-0'} absolute transition-opacity ease-in-out duration-500 text-accent-900 text-md text-center font-light text-lg`}>"{catchphrases[2]}"</div>
                 </div>
                 <div className="flex justify-center py-2 space-x-4">
-                    <div className={`${current === 0 ? 'opacity-100' : 'opacity-50'} bg-primary-900 rounded-lg w-4 h-4 transition-opacity ease-in-out duration-200`}></div>
-                    <div className={`${current === 1 ? 'opacity-100' : 'opacity-50'} bg-primary-900 rounded-lg w-4 h-4 transition-opacity ease-in-out duration-200`}></div>
-                    <div className={`${current === 2 ? 'opacity-100' : 'opacity-50'} bg-primary-900 rounded-lg w-4 h-4 transition-opacity ease-in-out duration-200`}></div>
+                    <div className={`${current === 0 ? 'opacity-100' : 'opacity-50'} bg-gray-400 rounded-lg w-4 h-4 transition-opacity ease-in-out duration-500`}></div>
+                    <div className={`${current === 1 ? 'opacity-100' : 'opacity-50'} bg-gray-400 rounded-lg w-4 h-4 transition-opacity ease-in-out duration-500`}></div>
+                    <div className={`${current === 2 ? 'opacity-100' : 'opacity-50'} bg-gray-400 rounded-lg w-4 h-4 transition-opacity ease-in-out duration-500`}></div>
                 </div>
                </div>
           </main>

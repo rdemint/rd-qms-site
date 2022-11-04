@@ -15,18 +15,18 @@ function NavItems() {
             {DocsNavList.map((section, i) => {
                 return (
                     <div key={section.name}>
-                        <h2 className="text-2xl font-semibold text-primary-900">{section.name}</h2>
+                        <h2 className="text-2xl font-semibold text-gray-900">{section.name}</h2>
 
                         <div className="pl-3 ml-1 my-1">
                             {section.children.map((child, i) => {
                                 return (
                                     <div className="mb-1" key={child.name}>
-                                        <h2 className="text-xl font-medium mb-1">{child.name}</h2>
+                                        <h2 className="text-xl font-medium mb-1 text-gray-800">{child.name}</h2>
                                         {child.children.map((topic, i) => {
                                             return (
                                                 <div key={topic.name} className="pl-2 border-l border-gray-200 hover:border-accent-900 ml-2">
                                                     <Link href={topic.slug}>
-                                                        <a className="text-md tracking-tight text-zinc-700 hover:text-primary-900">
+                                                        <a className="text-md tracking-tight text-zinc-700 hover:text-gray-900">
                                                             {topic.name}
                                                         </a>
                                                     </Link>

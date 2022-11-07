@@ -33,12 +33,12 @@ export default function Home() {
               <Hero />
               <div className="flex flex-col space-y-8 my-6 items-center w-full">
               <div className="flex flex-col items-center" >
-                  <a href="/blog" className="rounded-md border border-accent-700 px-4 py-2 w-48 text-center text-accent-900 shadow shadow-primary-100 hover:shadow-md">Blog</a>
+                  <a href="/blog" className="rounded-md border border-accent-700 px-4 py-2 w-48 text-center text-accent-900 bg-accent-100 hover:shadow-md">Blog</a>
                   <p className="text-gray-500 font-light">Expanded and freeform thoughts</p>
               </div>                                                                    
                                                                                         
                   <div className="flex flex-col items-center">
-                      <a href="/docs" className="rounded-md border border-accent-700 px-4 py-2 w-48 text-center text-accent-900 shadow shadow-primary-100 hover:shadow-md">Docs</a>
+                      <a href="/docs" className="rounded-md border border-accent-700 px-4 py-2 w-48 text-center text-accent-900 bg-accent-100 hover:shadow-md">Docs</a>
                   <p className="text-gray-500 font-light">Bite-sized learning and topic guides</p>
               </div>
               </div>

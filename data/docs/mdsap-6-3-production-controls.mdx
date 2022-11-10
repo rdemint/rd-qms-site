@@ -1,18 +1,38 @@
 ---
-title: MDSAP Task x-x Task Name
-summary: This is an example task.
-tags: ['something']
+title: MDSAP Task 6-3 Controls for the implementation of selected production and service process(es)
+summary: For each selected process, determine if the production and service provision processes are planned and conducted under controlled conditions.
+tags: ['production controls']
 slug: mdsap-6-3-production-controls
 ---
 
-<RegLang>Some reg language here</RegLang>
-<QdocList docs={['my first doc', 'my second doc']}/>
+<RegLang>
+For each selected process, determine if the production and service provision processes are planned and conducted under controlled conditions.
+- the availability of information describing product characteristics
+- the availability of documented procedures, requirements, work instructions, and reference materials, reference measurements, and criteria for workmanship
+- the use of suitable equipment
+- the availability and use of monitoring and measuring devices
+- the implementation of monitoring and measurement of process parameters and product characteristics during production
+- the implementation of release, delivery and post-delivery activities
+- the implementation of defined operations for labeling and packaging
+- the establishment of documented requirements for changes to methods and processes
+</RegLang>
+<QdocList docs={['device master record']}/>
 
 <ReportLang>
+Device master record evidences establishment of appropriate document types where controls are established. 
+Individual documents reviewed in corresponding tasks throughout this Chapter. 
+- DMR-XXX Device Master Record Rev.X
 </ReportLang>
 
-<Subtask actionitem={"identify the structure of production documentation. "}>
-Here is some context on what you should do.
+<Subtask actionitem={"Review the top-level product document, such as the device master record (DMR)."}>
+The examples of planning and control given by the task are redundant to many of tasks in the rest of Chapter 6.  The meaningful step to take here is to identify the top level product documentation from which all other relevant documents can be found identified. The top-level document gives evidence that control has been established, and individual documents are to be reviewed in corresponding tasks in the rest of the Chapter. 
+We can acknowledge it makes no sense to wait to <QLink>MDSAP Task 6-16 Device Master File</QLink> to review the device master file, as this will help us navigate product-specific documents throughout Chapter 6. 
+So give more explanation on the redundancy.
+- product characteristics, requirements, and workmanship are redundant to at least Task 6-4 - Product Cleanliness, Task 6-10 - Monitoring and Measurement of Product Conformity, Task 6-21 Acceptance Activities. 
+- the use of suitable equipment may be redundant to 'documented the infrastructure requirements to achieve product conformity' in Task 6-5. 
+- The availability of monitoring and measuring devices is redundant to Task 6-10 - Monitoring and Measurement of Product Conformity and Task 6-21 Acceptance Activities.
+- Implementation of release, delivery, and post-delivery activities is redundant to Task 6-17 - Production Record and Task 6-21 - Acceptance Activities, Task 6-26 - Installation, and Task 6-27 - Servicing.
+- The establishment of documented requirements for changes is redundant to Task 1-8 Document Controls and Task 6-8 Process Validation. 
 </Subtask>
 
 

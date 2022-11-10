@@ -1,18 +1,69 @@
 ---
-title: MDSAP Task x-x Task Name
-summary: This is an example task.
-tags: ['something']
+title: MDSAP Task 6-5 Infrastructure
+summary: Verify that the medical device organization has determined and documented the infrastructure requirements to achieve product conformity, including buildings, workspace, process equipment, and supporting services.
+tags: ['infrastructure', 'maintenance']
 slug: mdsap-6-5-infrastructure
 ---
 
-<RegLang>Some reg language here</RegLang>
-<QdocList docs={['my first doc', 'my second doc']}/>
+<RegLang>
+Verify that the medical device organization has determined and documented the infrastructure requirements to achieve product conformity, including buildings, workspace, process equipment, and supporting services.
+Verify that there are documented and implemented requirements for maintenance of process equipment where important for product quality, and that records of maintenance are maintained.
+Brazil(ANVISA): Verify that manufacturing facilities are configured in order to provide adequate means for people flow.
+</RegLang>
+<QdocList docs={['maintenance procedure', 'maintenance log']}/>
 
 <ReportLang>
+Facility tour did not identify concerns related to adequate space or infrastructure.
+- Maintenance Procedure Rev.X
+- Maintenance Log
+- Maintenance Record Asset ID-XXX YYYY-MM-DD
+- Maintenance Record Asset ID-XXX YYYY-MM-DD
+- Maintenance Record Asset ID-XXX YYYY-MM-DD
 </ReportLang>
 
-<Subtask actionitem={"Do this because it is important."}>
-Here is some context on what you should do.
+<Subtask actionitem={"From the facility tour, make conclusions on infrastructure and space available in the facility"}>
+Is there adequate space to separate nonconforming product with physical distance. Are storage areas orderly?  This task can be highly subjective, and unless issues have occurred, concerns should be raised as opportunities for improvement.
+</Subtask>
+
+<Subtask actionitem={"Review any pest control and facility procedures or instruction."}>
+Most teams will not have standalone pest control and facility procedures, but review a document log and interview to confirm whether specific procedures exist. 
+Typically pest control instruction will be incorporated into control of work environment procedures.  Pest control is typically performed monthly by an external service supplier.  Pest control traps should be visible on the production tour, typically in accordance with a map.  
+Pest control records should contain notes on the inspection such as whether pest traps need to be replaced, whether pest sightings occurred, etc.  Where pest control record cite issues, confirm the organization has take action.
+Typically facility instruction will be incorporated into preventive maintenance procedures.  For example, upkeep of air handling systems (i.e. HVAC) are typically handled as maintenance tasks.
+</Subtask>
+
+<Subtask actionitem={"Review maintenance procedures for preventive maintenance"}>
+Most teams document all infrastructure requirements through maintenance and calibration programs. 
+Interview personnel and ask how team members know if maintenance items are overdue.  
+Maintenance software is common, and the team should be able to provide a report on all overdue maintenance items. 
+</Subtask>
+
+<Subtask actionitem={"Identify how maintenance requirements are established"}>
+Maintenance requirements are to outline the maintenance tasks and the frequencies at which those tasks are to be performed.  These are often established in Maintenance software.  
+Interestingly, when maintenance requirements live exclusively in maintenance software, they effectively live outside of a team's document change control system, and often technically are nonconforming to the document changes control systems themselves.
+
+Registrars and Notified Bodies never seem to scrutinize this much, as long as some reasonable permissions for supervisor involvement are configured in the software for changes.
+
+Confirm some instruction and process exists to control changes to maintenance requirements. For example, confirm that permissions are configured in the software so that maintenance requirements cannot be changed without supervisor approval. 
+</Subtask>
+
+<Subtask actionitem={"Review how preventive maintenance is recorded and sample records"}>
+Preventive maintenance is often handled with maintenance software, though paper forms are not uncommon.
+Review how the record makes it clear whether or not all defined maintenance tasks were performed.  For example, a maintenance task may be phrased 'replace filter as necessary'.  A simple sign-off will not make it clear whether or not the filter was replaced.  When activities are critical to product quality, it may be relevant to determine how often activities take place by requesting purchase orders for the maintenance parts.
+It would be a best practice to have a strong note system in the maintenance record that gives clarity to which 'as necessary' activities were performed. 
+</Subtask>
+<Subtask actionitem={"Review how reactive maintenance is recorded and sample records."}>
+Reactive maintenance is overlooked by some teams, but since the lack of this maintenance can affect product quality, the requirements for records also apply.
+</Subtask>
+<Subtask actionitem={"Review how maintenance activities are assessed for impact to process validations."}>
+Many teams do not have well defined instruction for evaluating 'significant maintenance' and determining if process revalidation is required. 
+Realistically, this must rely on subject matter expertise, but it should be reviewed if maintenance team members receive any training on identifying the threshold beyond which process validation would be required. 
+Teams which have reactive maintenance reviewed by a maintenance supervisor or engineer have a much stronger argument that they are taking steps to identify these scenarios. 
+</Subtask>
+
+<Subtask actionitem={"Review how maintenance data is used to update preventive maintenance frequencies.  Review if maintenance data is submitted for management review."}>
+Many teams do not have well established processes for tracking and reviewing maintenance data, and this data type often is not included in management review or other quality system data analysis. 
+However, a trend in reactive maintenance could be an indicator of a problem, and preventive maintenance frequencies and tasks should be re-evaluated. 
 </Subtask>
 
 

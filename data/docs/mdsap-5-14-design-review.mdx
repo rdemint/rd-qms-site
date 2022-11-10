@@ -1,18 +1,34 @@
 ---
-title: MDSAP Task x-x Task Name
-summary: This is an example task.
-tags: ['something']
+title: MDSAP Task 5-14 Design Review
+summary: Verify that design reviews were conducted at suitable stages as required by the design and development plan.
+tags: ['design review']
 slug: mdsap-5-14-design-review
 ---
 
-<RegLang>Some reg language here</RegLang>
-<QdocList docs={['my first doc', 'my second doc']}/>
+<RegLang>
+Verify that design reviews were conducted at suitable stages as required by the design and development plan.
+</RegLang>
 
 <ReportLang>
+- Design Review, Design Stage, Product, YYYY-MM-DD
+- Design Review, Design Stage, Product, YYYY-MM-DD
 </ReportLang>
 
-<Subtask actionitem={"Do this because it is important."}>
-Here is some context on what you should do.
+<Subtask actionitem={"Confirm design reviews took place at the frequency as planned"}>
+With the expectations provided by design planning documents of <QLink>MDSAP Task 5-3 Design Planning</QLink>, confirm that design reviews were conducted at the stages planned. It is common for design reviews to be performed after each 'waterfall' phase, though phases are often combined (i.e. planning, inputs & outputs, verification & validation, transfer). 
+</Subtask>
+
+<Subtask actionitem={"Evaluate if design reviews have objective reference to the design under review"}>
+The design under review should be knowable, and with few exceptions, involve revision controlled design documentation.  In some stages of development, other conceptual artifacts may be involved and should be included in the review records.
+The design review should objectively reference the design document ID and revision under review, and an outcome of the design review should be a revised document or an affirmation that document changes are not needed.
+</Subtask>
+
+<Subtask actionitem={"Evaluate if design review action items were followed through with"}>
+Some teams do not have strong relationships between design reviews and document control releases. In the worst case, decisions made in design reviews are never carried forward into the design documentation.
+</Subtask>
+
+<Subtask actionitem={"Evaluate if design review participants are appropriate and include an independent reviewer"}>
+Design reviews should include a cross-functional team with any specialists needed to make decisions on the scope of the documents under review.
 </Subtask>
 
 

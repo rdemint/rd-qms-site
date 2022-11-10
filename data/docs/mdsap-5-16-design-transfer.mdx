@@ -1,18 +1,35 @@
 ---
-title: MDSAP Task x-x Task Name
-summary: This is an example task.
-tags: ['something']
+title: MDSAP Task 5-16 Design Transfer
+summary: Determine if the design was correctly transferred to production.
+tags: ['design transfer']
 slug: mdsap-5-16-design-transfer
 ---
 
-<RegLang>Some reg language here</RegLang>
-<QdocList docs={['my first doc', 'my second doc']}/>
+<RegLang>
+Determine if the design was correctly transferred to production.
+
+Brazil(ANVISA): Confirm that the manufacture ensures that the design is not released for production until its approval by the 
+persons assigned by the manufacturer and that the person/s assigned review all records required to the design history file in order to ensure it is complete and the final design is compatible with the approved plans, prior to its release. Confirm that this release, including date and manual or electronic signature of the responsible is documented. 
+</RegLang>
+
+<QdocList docs={['device master record', 'design transfer design review']}/>
 
 <ReportLang>
+- DMR-XXXX Device Master Record Rev.X
+- Design Review, Design Transfer, Product, YYYY-MM-DD
 </ReportLang>
 
-<Subtask actionitem={"Do this because it is important."}>
-Here is some context on what you should do.
+<Subtask actionitem={"Assess the date and scope of the transfer"}>
+Design transfer is not a single phase but actually begins at the time that design outputs are being created.
+Fully assessing design transfer would include a review of production documentation, process validation, and other tasks called out in Chapter 6.  Rather than performing redundant work to those tasks, identify date and scope of the transfer.
+The date of the transfer can be compared to the completion of design verification and validation reports, process validation activities, and eventually commercial distribution records  later in Chapter 6. 
+The scope of the transfer is to confirm which product codes are transferred for commercial production in which markets.  It's not uncommon for multiple products to be in development, but only certain products receive marketing authorization in certain markets. 
+Link to <QLink>MDSAP Task 6-25 Distribution Records</QLink>: Compare transfer of designs to particular markets with the markets distributed to. 
+</Subtask>
+
+<Subtask actionitem={"Assess upon what document set the transfer was completed"}>
+The review team needs some way of ensuring that the design and development process is complete, including the translation into production specifications.  
+This typically involves a review and confirmation that key design and production-related documents have been released and/or updated, such as the risk management file, DMR, process validation report(s), etc. 
 </Subtask>
 
 

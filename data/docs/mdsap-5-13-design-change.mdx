@@ -1,19 +1,60 @@
 ---
-title: MDSAP Task x-x Task Name
-summary: This is an example task.
-tags: ['something']
+title: MDSAP Task 5-13 Design Change
+summary: Verify that design and development changes were controlled, verified (or where appropriate validated), and approved prior to implementation.
+tags: ['design change', 'design freeze', 'change notification', 'change control']
 slug: mdsap-5-13-design-change
 ---
 
-<RegLang>Some reg language here</RegLang>
-<QdocList docs={['my first doc', 'my second doc']}/>
+<RegLang>
+Verify that design and development changes were controlled, verified (or where appropriate validated), and approved prior to implementation.
+Confirm that any new risks associated with the design change have been identified and mitigated to the extent practical.
+
+Japan(MHLW): Confirm if the MAH has submitted a new application,a change application, or a change notification to PMDA/a Registered Certification Body.
+
+United States(FDA): Confirm if the organization obtained a new 510(k) or supplement to the pre-market approval if required.
+
+Canada(HC): Confirm the organization has a process for identifying a "significant change" to a Class III or IV medical device. Verify that information about "significant changes" is submitted in a medical device license amendment application.
+
+Australia(TGA): Verify that the manufacturer has a process or procedure for identifying a proposed substantial change to the design, or intended performance, of a class AIMD or class III device, and to notify the assessment body prior to implementing the change.
+
+Brazil(ANVISA): If the medical device is already registered/notified with ANVISA, verify that the design change was correctly and promptly submitted to ANVISA for approval, when applicable.
+</RegLang>
+
+<QdocList docs={['design change procedure', 'change order log']}/>
 
 <ReportLang>
+- Design Control Procedure Rev.X
+- Change Order Log
+Change Order Log was used to sample design changes.
+- Change Order XXXX
+- Change Order XXXX 
 </ReportLang>
 
-<Subtask actionitem={"Do this because it is important."}>
-Here is some context on what you should do.
+<Subtask actionitem={"Review design change procedures."}>
+Some teams have design change processes separate from other document changes (for example, Change Order vs. Engineering Change Order).  Some teams extend their change process with extra forms when the change is a design change. 
+Understand how teams ensure that design changes are identified and funneled into the correct change system, so that they are evaluated appropriately.
 </Subtask>
+
+<Subtask actionitem={"Identify design changes."}>
+If multiple change order processes are used (i.e. CO and ECO), review logs of both processes to ensure that design changes are being funneled into the correct change process.  It is often not intuitive for teams that labeling and packaging is part of the device design, so changes to these aspects are the most commonly overlooked.
+
+Two milestones are relevant to design changes; the start of design verification, and submission for marketing authorization.
+
+Teams will often call the last design review prior to the start of design verification, the 'design freeze'.  This recognizes that once design verification begins, subsequent changes need to be evaluated for impact to the previously performed activities (e.g. the change may invalidate the test results).
+
+Teams also must control design changes that occur after the submission for marketing authorization.  If the submitted design receives marketing authorization, changes could invalidate that marketing authorization or require interaction with the regulatory authorities, amongst other actions.
+
+Attempt to identify changes which impacted marketing authorization (i.e. new 510(k)), and where the organization determined marketing authorization was not impacted (i.e. Letter to File). 
+
+Obviously, teams try to minimize the burden associated with design changes, which usually means that changes are rare.
+</Subtask>
+
+<Subtask actionitem={"Review evaluation, implementation, and verification of design changes"}>
+Evaluation: As linked to <QLink>MDSAP Task 2-3 Notification of Changes</QLink>, changes must be evaluated to determine if external communication, approval, etc. is required. Confirm that change evaluation procedures are followed. 
+Implementation: Confirm that the change was implemented in design and production documentation. 
+Verification: Evaluate whether the organization has evidence that previously performed design verification, design validation, and process validation did not need to be re-performed. If the team determined that one or more of these activities did need to be re-performed, confirm that they were and that they met acceptance criteria. 
+</Subtask>
+
 
 
 

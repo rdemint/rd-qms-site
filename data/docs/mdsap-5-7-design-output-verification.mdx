@@ -1,18 +1,42 @@
 ---
-title: MDSAP Task x-x Task Name
-summary: This is an example task.
-tags: ['something']
-slug: mdsap-x-x-task-name
+title: MDSAP Task 5-7 Design and development output and design verification
+summary: Review medical device specifications to confirm that design and development outputs are traceable to and satisfy design input requirements.
+tags: ['design output', 'essential design output']
+slug: mdsap-5-7-design-output-verification
 ---
 
-<RegLang>Some reg language here</RegLang>
-<QdocList docs={['my first doc', 'my second doc']}/>
+<RegLang>
+Review medical device specifications to confirm that design and development outputs are traceable to and satisfy design input requirements.
+Verify that the design and development outputs essential for the proper functioning of the medical device have been identified. 
+</RegLang>
+
+<QdocList docs={['design traceability matrix', 'device master record']}/>
 
 <ReportLang>
+- DOC-XXXX Traceability Matrix Rev.X
+- DMR-XXXX Rev.X
+- DWG-XXXX Rev.X
+- SPEC-XXXX Rev.X
+- BOM-XXXX Rev.X
 </ReportLang>
 
-<Subtask actionitem={"Do this because it is important."}>
-Here is some context on what you should do.
+<Subtask actionitem={"Identify essential design outputs"}>
+Outputs that are essential for the proper functioning of the device must be identified.  Teams often do not explicitly identify 'essential design outputs' (many teams have never heard of the term).  But teams should be able to point to the risk controls associated with the highest and unacceptable risks in the risk management documentation.
+Different teams have different levels of detail when they describe risk controls.  Use interview and other design documentation as needed to identify the specific design documents which hold risk controls (i.e. specifications, dimensions, and/or tolerances).
+Risk management documentation can be fully assessed in <QLink>MDSAP Task 5-8 Design risk management</QLink>
+</Subtask>
+
+<Subtask actionitem={"Sample design outputs of interest"}>
+Design outputs include the device specifications, packaging, labeling, product-specific procedures (i.e. manufacturing and monitoring), and if applicable, installation and servicing.
+Sample design outputs related to the sampled design inputs, at minimum. 
+It can be useful to sample top-level design outputs such as DHF Index and DMR index (also required in <QLink>MDSAP Task 6-16 Device Master File</QLink>, and then lower-level outputs such as drawings, specification documents, etc.
+Identify and request the design documents for essential design outputs as well as nonessential design outputs, to confirm that they have been established.  Select design documents should be compared later against both design verification documentation and production documentation to ensure alignment.
+</Subtask>
+
+<Subtask actionitem={"Assess design verification"}>
+Having sampled specific design inputs and the associated design outputs, identify the associated design verification documentation. 
+For select or all design inputs, ensure the design input is appropriately used as design verification acceptance criteria.
+For select or all design outputs, ensure that the design output was in fact part of the design verification activity (i.e. the specific material of a design output is evidenced to be used through purchase order and production records attached to the design verification report.)
 </Subtask>
 
 

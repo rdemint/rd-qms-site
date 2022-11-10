@@ -1,19 +1,42 @@
 ---
-title: MDSAP Task x-x Task Name
-summary: This is an example task.
-tags: ['something']
-slug: mdsap-x-x-task-name
+title: MDSAP Task 5-5 Design and development input 
+summary: Verify that design and development inputs were established, reviewed and approved.
+tags: ['design input']
+slug: mdsap-5-5-design-input
 ---
 
-<RegLang>Some reg language here</RegLang>
-<QdocList docs={['my first doc', 'my second doc']}/>
+<RegLang>
+Verify that design and development inputs were established, reviewed and approved; and that they address customer functional, performance and safety requirements, intended use, 
+applicable regulatory requirements, and other requirements including those arising from human factors issues, essential for design and development.
+
+Verify that any risks and risk mitigation measures identified during the risk management process are used as an input in the design and development process.
+
+Australia (TGA): Verify that the manufacturer has identified the relevant Essential Principles that apply to the medical device.
+
+United States (FDA): Verify that the organization has the appropriate marketing clearance if distributing the devices in the United States. (Note: This is redundant to Chapter 2). 
+
+</RegLang>
+<QdocList docs={['design input documentation', 'risk control documentation']}/>
 
 <ReportLang>
+- DOC-XXXX Traceability Matrix Rev.X
+- DI-XX 'DI for usability'
+- DI-XX 'DI for applied standard ISO-XXXXXX
+- DI-XX 'DI for labeling'
+- DI-XX 'DI for safety feature'
+- RMF-XXXX Risk Management File Rev.X
 </ReportLang>
 
-<Subtask actionitem={"Do this because it is important."}>
-Here is some context on what you should do.
+<Subtask actionitem={"Review process for developing and identifying design inputs to ensure they are comprehensive and complete."}>
+Most teams do not have formal processes or set of activities for developing design inputs to ensure that they are complete, although this would be a best practice.  Most teams rely on cross-functional design review and subject matter expertise.
+
+The applicable regulations and process or performance standards and test methods should be identifiable within design input (e.g. 'the state of the art').  For example in the United States, FDA identifies 'Recognized consensus standards' in a database.
+Also review how risk and usability activities are an input to design input.  Cross reference risk and usability documentation  as appropriate to ensure that content has been used as design input, especially where risk controls are expressed as design requirements.  Risk management documentation can be fully assessed in <QLink>MDSAP Task 5-8 Design risk management</QLink>.
 </Subtask>
+
+<Subtask actionitem={"Select design input for follow-up throughout the Chapter"}>
+Select design inputs for sampling throughout this chapter (i.e. design outputs, verification, validation, etc.). 
+Prioritize inputs by risk but also sample from categorically different inputs (labeling, function, performance, dimension, safety features, material, usability, etc.).
 
 
 

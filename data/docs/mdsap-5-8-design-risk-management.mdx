@@ -1,18 +1,58 @@
 ---
-title: MDSAP Task x-x Task Name
-summary: This is an example task.
-tags: ['something']
-slug: mdsap-x-x-task-name
+title: MDSAP Task 5-8 Risk Management activities applied throughout the design and development project
+summary: Verify that risk management activities are defined and implemented for product and process design and development.
+tags: ['risk management', 'ISO 14971']
+slug: mdsap-5-8-design-risk-management
 ---
 
-<RegLang>Some reg language here</RegLang>
-<QdocList docs={['my first doc', 'my second doc']}/>
+<RegLang>
+Verify that risk management activities are defined and implemented for product and process design and development.
+Confirm that risk acceptability criteria are established and met throughout the design and development process.
+Verify that any residual risk is evaluated and, where, communicated to the customer (e.g., labeling, service documents, advisory notices, etc.).
+Brazil(ANVISA): Note: has country-specific requirements covered by ISO 14971
+United States (FDA): Risks should be calculated in normal and fault conditions. 
+</RegLang>
+<QdocList docs={['risk management file', 'my second doc']}/>
 
 <ReportLang>
+- Risk management procedure Rev.X
+- RMF-XXXX Risk management file Rev.X
 </ReportLang>
 
-<Subtask actionitem={"Do this because it is important."}>
-Here is some context on what you should do.
+All subtasks here assume the manufacturer has a risk management process in accordance with ISO 14971.
+
+<Subtask actionitem={"Review risk management procedures."}>
+Review procedures to understand the required process, deliverables, risk policy, and acceptance criteria which are to be used in the product-specific risk management documents.  Product specific planning documents may provide some of the needed information (i.e. risk estimation criteria to be applied to a specific device family).
+</Subtask>
+
+<Subtask actionitem={"Review risk planning"}>
+Risk planning may take the form of a procedure or standalone risk management plan. Of particular importance, review how the organization ensures a competent cross-functional team contributes to the risk management activities.
+</Subtask>
+
+<Subtask actionitem={"Review risk analysis"}>
+The risk analysis is to consider intended use and reasonably forseeable misuse, identification of characteristics related to safety, identification of hazards and hazardous situations, and risk estimation. 
+It would be a best practice for an organization to conduct multiple formal activities to ensure a risk analysis is complete and comprehensive to the intended use. 
+This could include a usability specification, clinical workflow task analysis, formal questioning (such as the questions in ISO 14971 or TR24971), and review of public information from similar devices.
+</Subtask>
+
+<Subtask actionitem={"Review risk evaluation"}>
+The estimated risks are to be evaluated against the risk acceptability criteria.
+</Subtask>
+<Subtask actionitem={"Review risk controls and risk control verification"}>
+Risk control options includes a) inherently safe design and manufacture, b) protective measures in the medical device itself or in the manufacturing process, or c) information for safety and where appropriate, training to users.
+
+Link to <QLink>MDSAP Task 5-9 Effectiveness of Risk Control Measures</QLink>: For risk controls related to design, identify some risk controls to link to design verification activities, which can be fully documented in the next task.
+
+Link to <QLink>MDSAP Task 6-10 Monitoring and Measurement of Product Conformity</QLink> and <QLink>MDSAP Task 6-21 Acceptance Activities</QLink>: For risk controls related to manufacturing, identify the production documentation which provides evidence that the controls have been implemented.
+</Subtask>
+
+<Subtask actionitem={"Review evaluation of overall residual risk"}>
+The evaluation is to occur using the method and criteria for acceptability defined in the risk management plan.  The manufacturer shall inform users of significant residual risks and shall include the information in the accompanying documentation.  
+</Subtask>
+
+<Subtask actionitem={"Review production and post-production activities"}>
+It is common for teams not to have standalone information collection processes for risk management, as this would be redundant to the quality management system (i.e. management review).
+Rather, review the revision history of the risk management documentation.  It is common for risks to be added and risk occurrence estimations to be updated after commercialization. If no updates have occurred, it may be appropriate to compare to complaint data to evaluate if the organization has overlooked an event or trend which should have resulted in a risk management update.
 </Subtask>
 
 

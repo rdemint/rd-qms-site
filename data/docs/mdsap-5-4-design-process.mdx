@@ -1,18 +1,28 @@
 ---
-title: MDSAP Task x-x Task Name
-summary: This is an example task.
-tags: ['something']
-slug: mdsap-x-x-task-name
+title: MDSAP Task 5-4 Implementation of the design and development process
+summary: For the device design and development record(s) selected, verify that design and development procedures have been established and applied.
+tags: ['design control']
+slug: mdsap-5-4-design-process
 ---
 
-<RegLang>Some reg language here</RegLang>
-<QdocList docs={['my first doc', 'my second doc']}/>
+<RegLang>
+For the device design and development record(s) selected, verify that design and development procedures have been established and applied.
+Confirm the design and development procedures address the design and development stages, review, verification, validation, design transfer, and design changes.
+</RegLang>
+<QdocList docs={['Design control procedure']}/>
 
 <ReportLang>
+- Design Control Procedure Rev.X
 </ReportLang>
 
-<Subtask actionitem={"Do this because it is important."}>
-Here is some context on what you should do.
+<Subtask actionitem={"Review design control procedures."}>
+Identify the procedures relevant to overall design and development.  The language of this task is confusing because it implies that design control procedures are product-specific, which is essentially never the case. Teams ubiquitously maintain overarching design procedures and product-specific plans (these plans being relevant to <QLink>MDSAP Task 5-3 Design Planning</QLink>).  
+It is common for teams to have multiple standalone procedures spanning the topics related to design control including risk management, usability engineering, technical documentation management, software design, design change etc. Understand how the instruction is broken up in the team's QMS.
+Note: We can acknowledge that it will be more intuitive to most auditors to complete this task before <QLink>MDSAP Task 5-3 Design Planning</QLink>, so feel free to complete them in either order.
+</Subtask>
+
+<Subtask actionitem={"Compare sampled design plans with procedures."}>
+Design plans were sampled in <QLink>MDSAP Task 5-3 Design Planning</QLink>.  Compare the content of the product-specific plans with the reviewed procedures.
 </Subtask>
 
 

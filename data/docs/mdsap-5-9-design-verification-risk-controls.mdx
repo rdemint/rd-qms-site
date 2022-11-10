@@ -1,18 +1,32 @@
 ---
-title: MDSAP Task x-x Task Name
-summary: This is an example task.
-tags: ['something']
-slug: mdsap-x-x-task-name
+title: MDSAP Task 5-9 Design verification or design validation to confirm the effectiveness of risk control measures
+summary: Confirm that design verification and/or design validation includes assurances that risk control measures are effective in controlling or reducing risk.
+tags: ['design verification', 'design validation', 'risk management']
+slug: mdsap-5-9-design-verification-risk-controls
 ---
 
-<RegLang>Some reg language here</RegLang>
-<QdocList docs={['my first doc', 'my second doc']}/>
+<RegLang>
+Confirm that design verification and/or design validation includes assurances that risk control measures are effective in controlling or reducing risk.
+</RegLang>
+
+<QdocList docs={['Design traceability matrix', 'Risk management file']}/>
 
 <ReportLang>
+Same documents as Task 5-5.
+- DOC-XXXX Traceability Matrix Rev.X
+- RMF-XXXX Risk Management File Rev.X
+Design verification/validation evidences implementation and effectiveness of risk controls.
+- VER-XXXX Design Verification Report Rev.X
+- VER-XXXX Design verification Report Rev.X
+- VER-XXXX Design verification Report Rev.X
+- VAL-XXXX Design validation Report Rev.X
 </ReportLang>
 
-<Subtask actionitem={"Do this because it is important."}>
-Here is some context on what you should do.
+<Subtask actionitem={"Review design verification and validation activities for evidence of implementation and effectiveness of risk controls"}>
+Review verification and validation reports.  Implementation of risk controls is to be knowable through reference to controlled design documents.   
+For example, for a risk control related to a tolerance, the design verification report would reference that tolerance in the acceptance criteria (or reference the design document containing the tolerance).
+Ensure that the risk controls are ultimately carried forward to product-specific design documentation (such as a drawing or spec sheet).
+Link to <QLink>MDSAP Task 6-10 Monitoring and Measurement of Product Conformity</QLink>:  Design related risk controls would be expected to have ongoing monitoring and measurement activities, if not subject to process validation.
 </Subtask>
 
 

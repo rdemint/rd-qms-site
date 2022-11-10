@@ -1,19 +1,42 @@
 ---
-title: MDSAP Task x-x Task Name
-summary: This is an example task.
-tags: ['something']
-slug: mdsap-x-x-task-name
+title: MDSAP Task 3-14 Evaluation of Complaints for Adverse Event Reporting
+summary: Verify that the medical device organization has defined and documented procedures for the evaluation of complaints for adverse event reporting. 
+tags: ['adverse event', 'reportable event']
+slug: mdsap-3-14-complaint-reporting
 ---
 
-<RegLang>Some reg language here</RegLang>
-<QdocList docs={['my first doc', 'my second doc']}/>
+<RegLang>
+Verify that the medical device organization has defined and documented procedures for the evaluation of complaints for adverse event reporting. 
+Confirm that decisions to not report complaints were made according to established procedures and a documented rationale.
+
+Canada (HC): Reporting is not required for incidents that occur outside of Canada for Class II-IV devices, unless corrective action is taken in which case the event is reported as Foreign Risk Notification.  
+Reporting is required for Class I devices, 'as soon as possible', in which case the event is reported as a (Foreign) Incident Report.
+10 days for death or serious deterioration in the state of health and 30 days others. 
+
+United States (FDA): Reporting is to occur within 5 days to prevent unreasonable risk to public or if remedial action is required to prevent death or serious injury.  Reporting is 30 days otherwise.
+
+Australia (TGA): Reporting is to occur with 48 hours to prevent unreasonable risk to public, 10 days if death or serious deterioration of health has occurred, and 30 days otherwise.
+</RegLang>
+
+<QdocList docs={['Reporting procedures', 'Management review presentation', 'complaint log']}/>
 
 <ReportLang>
+- Medical Device Reporting Procedure Ver.X
+- Management Review presentation
+- Complaint 123
+- Complaint...
 </ReportLang>
 
-<Subtask actionitem={"Do this because it is important."}>
-Here is some context on what you should do.
+<Subtask actionitem={"Review reporting procedures and interview personnel."}>
+Review reporting procedures to ensure that they define and give criteria for adverse events according to the applicable markets.
 </Subtask>
 
+<Subtask actionitem={"Review complaint logs and management review to sample reportable complaints."}>
+Review management review for the data related to reporting to regulatory authorities.  Review the related complaints.
+Cross check this data against the complaint log, if the log identifies events as reportable or not.  
+If the complaint log has a summary of the reported issue, scan for summaries which appear to be reportable, especially if the organization did not report those events. Review the complaint details and determine if complaints were followed.
+</Subtask>
 
-
+<Subtask actionitem={"Review evidence of reporting adverse events"}>
+This task overlaps with <QLink>MDSAP Task 4-1 Notification of Adverse Events</QLink>.  Since the complaints are being reviewed here, it is likely best to reference in Task 4-1 'as aggregated in Task 3-14'. 
+</Subtask>

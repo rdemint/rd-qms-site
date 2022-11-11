@@ -1,19 +1,36 @@
 ---
-title: MDSAP Task x-x Task Name
-summary: This is an example task.
-tags: ['something']
+title: MDSAP Task 6-25 Review of customer requirements, distribution records
+summary: Confirm that the medical device organization performs a review of the customer’s requirements, including the purchase order requirements, prior to the medical device organization’s commitment to supply a product to a customer.
+tags: ['contract review', 'distribution records']
 slug: mdsap-6-25-customer-requirements-distribution-records
 ---
 
-<RegLang>Some reg language here</RegLang>
-<QdocList docs={['my first doc', 'my second doc']}/>
+<RegLang>
+Confirm that the medical device organization performs a review of the customer’s requirements, including the purchase order requirements, prior to the medical device organization’s commitment to supply a product to a customer.
+Verify that the medical device organization maintains documentation required by regulatory authorities regarding maintenance of distribution records.
+Brazil (ANVISA):Verify that the manufacturer maintains distribution records which include or make reference to: the name and address of the consignee, the identification and quantity of products shipped, the date of dispatch, and any 
+numerical control used for traceability [ANVISA RDC 6.3].
+Canada (HC): Verify that the Manufacturer maintains distribution records that contain sufficient information to permit complete and rapid withdrawal of the medical device from the market [CMDR 52-53].
+Verify that distribution records of a device are retained by the Manufacturer in a manner that will allow for timely retrieval, for the longer of (a) the projected useful life of the device; and (b) two years after the date the device was shipped [CMDR 55-56].
+United States (FDA): Verify that the Manufacturer maintains distribution records which include or refer to the location of the name and address of the initial consignee, the identification and quantity of devices shipped; and any control 
+numbers used [21 CFR 820.160(b)].
+</RegLang>
+
+<QdocList docs={['Customer order acceptance procedure', 'Distribution procedure']}/>
 
 <ReportLang>
+- Customer order acceptance procedure Rev.X
+- Distribution procedure Rev.X
 </ReportLang>
 
-<Subtask actionitem={"Do this because it is important."}>
+<Subtask actionitem={"Review the process for customer order acceptance."}>
 Here is some context on what you should do.
 </Subtask>
 
+<Subtask actionitem={"Review the process for distribution."}>
+Assume at this point that all acceptance and release activities have been completed per <QLink>MDAP Task 6-17 Production Record</QLink>. 
+Distribution logs should have already been sampled to facilitate DHR sampling, traceability, and ability to conduct recall. Review distribution procedures if this has not been done, and compare to the individual distribution records. 
+The organization must maintain distribution records which include or refer to the location of the initial consignee, the identification and quantity of devices shipped, the date shipped, and any control numbers used.
+</Subtask>
 
 

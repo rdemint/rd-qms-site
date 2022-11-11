@@ -1,18 +1,35 @@
 ---
-title: MDSAP Task x-x Task Name
-summary: This is an example task.
-tags: ['something']
+title: MDSAP Task 6-10 Monitoring and measurement of product conformity
+summary: Verify that the system for monitoring and measuring of product characteristics is capable of demonstrating the conformity of products to specified requirements.
+tags: ['monitoring and measurement', 'product conformity']
 slug: mdsap-6-10-monitoring-product-conformity
 ---
 
-<RegLang>Some reg language here</RegLang>
-<QdocList docs={['my first doc', 'my second doc']}/>
+<RegLang>
+Verify that the system for monitoring and measuring of product characteristics is capable of demonstrating the conformity of products to specified requirements.
+Confirm that product risk is considered in the type and extent of product monitoring activities.
+
+</RegLang>
+<QdocList docs={['manufacturing work instructions', 'device history records']}/>
 
 <ReportLang>
+Monitoring of process parameters for validated process demonstrated by manufacturing work instructions and device history records. 
+- Manufacturing work instructions Rev.X
+- Manufacturing work instructions Rev.X
+- DHR Lot-XXXX
+- DHR Lot-XXXX
+- DHR Lot-XXXX
+Monitoring and measurement of product (acceptance activities) documented in Task 6-21. 
 </ReportLang>
 
-<Subtask actionitem={"Do this because it is important."}>
-Here is some context on what you should do.
+<Subtask actionitem={"Review how the output of process validation activities have resulted in ongoing process monitoring."}>
+After process validation, the organization must determine the ongoing monitoring and measurement activities to ensure product conforms to specifications, where conformity is not fully verified (100% inspection).
+As this task states this can be monitoring and measurement of the process or the product itself. 
+The monitoring of process parameters provides evidence that validated processes are in a state of control. 
+The 'monitoring and measurement of product characteristics' is a just complicated way of saying 'acceptance activities' and this task is therefore partially redundant to <QLink>MDSAP 6-21 Acceptance Activities</QLink>. 
+In this task then, it is fair to focus on the monitoring and measurement of process. 
+
+This task is further complicated by the fact that process parameter monitoring is usually easiest to identify by reviewing the device history record, because process parameters are commonly written down in the DHR as evidence that they were verified. This is a sequential flaw in the task model given that <QLink>Task 6-17 Production Record; Evidence of compliance of Released Devices</QLink> does not come until many tasks later. As always, do not let the flaws of the task model limit the flow of the audit.  The DHRs can be partially reviewed now and revisited later, if desired.  The same DHRs can be listed for both tasks.  
 </Subtask>
 
 

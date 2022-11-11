@@ -1,18 +1,24 @@
 ---
-title: MDSAP Task x-x Task Name
-summary: This is an example task.
-tags: ['something']
+title: MDSAP Task 6-12 Competence of Personnel
+summary: Verify that personnel are competent to implement and maintain the processes in accordance with the requirements identified by the medical device organization.
+tags: ['training', 'competence']
 slug: mdsap-6-11-production-risk-controls
 ---
 
-<RegLang>Some reg language here</RegLang>
-<QdocList docs={['my first doc', 'my second doc']}/>
+<RegLang>
+Verify that personnel are competent to implement and maintain the processes in accordance with the requirements identified by the medical device organization.
+</RegLang>
+<QdocList docs={['training procedure']}/>
 
 <ReportLang>
+- Training procedure Rev.X
+See training records aggregated in Task 1-6.  
+Personnel interviewed on the production tour demonstrated competence.
 </ReportLang>
 
-<Subtask actionitem={"Do this because it is important."}>
-Here is some context on what you should do.
+<Subtask actionitem={"Confirm that the audit sampling of training records included production personnel."}>
+This task is redundant to <QLink>MDSAP Task 1-6 Personnel Competency and Training</QLink> where training records are to be sampled. In the current task, simply confirm that the previous sampling included production personnel and sample more if needed.  Ideally, the sampling should include production personnel observed in any DHRs reviewed and personnel observed on the production tour. Ensure that sampling includes those team members are have direct contact with the product and assess product conformity, such as operators and QA inspectors. 
+Link to <QLink>MDSAP Task 6-17 Production Record; Evidence of Compliance of Released Devices</QLink>: This is another audit model sequence flaw, as the sampling of production records is an input to training record sampling.  This task can be revisited if needed once production records are sampled.  
 </Subtask>
 
 

@@ -1,18 +1,30 @@
 ---
-title: MDSAP Task x-x Task Name
-summary: This is an example task.
-tags: ['something']
+title: MDSAP Task 6-15 Validation of software used for the control of the production and service process
+summary: If the selected process is software controlled, or if software is used in production equipment or the quality management system, verify that the software is validated for its intended use. 
+tags: ['software validation', 'qms software']
 slug: mdsap-6-15-software-validation
 ---
 
 <RegLang>Some reg language here</RegLang>
-<QdocList docs={['my first doc', 'my second doc']}/>
+<QdocList docs={['software validation procedure', 'software master validation plan']}/>
 
 <ReportLang>
+If the selected process is software controlled, or if software is used in production equipment or the quality management system, verify that the software is validated for its intended use.
+Software validation may be part of equipment qualification.
 </ReportLang>
 
-<Subtask actionitem={"Do this because it is important."}>
-Here is some context on what you should do.
+<Subtask actionitem={"Identify software within scope of the quality management system."}>
+It is a best practice to have a master software list/log or a software master validation plan where the determination of the extent of software validation activities is required. 
+In some teams however, it is difficult to identify the software in use, especially because procedures commonly use indirect references such as 'the purchasing system' or 'the ERP system'.  Interviews throughout the audit are essential here.
+</Subtask>
+
+<Subtask actionitem={"Review software validation procedures and activities"}>
+Most teams will use some software for document control, production management, and/or purchasing.
+Most software validation activities are handwaving, as the activities that individual teams perform to pass audits are insignificant compared to the activities that software manufacturers perform.  This is especially true because almost no teams use 'custom' software. Many teams keep software validation activities to a minimum, by utilizing a 'risk-based approach'.  This is actually quite reasonable, as it is a joke  to pretend manufacturers are meaningfully 'validating' their cloud document platforms and QuickBooks software.     
+
+We can acknowledge that most teams use configurable commercial software, rather than custom software.
+
+Highly configurable software, such as an ERP system, is truly worthy of a team's time to validate, but these software validations will typically be so lengthy and complex that realistically little audit time can be spent reviewing them.  Select a few key software requirements, such as the permissions and configuration needed to ensure the integrity of records.  Unless other QMS data indicates a problems arising from the use of software, it is not typically consistent with a risk-based audit approach to review software validations end-to-end. 
 </Subtask>
 
 

@@ -1,18 +1,26 @@
 ---
-title: MDSAP Task x-x Task Name
-summary: This is an example task.
-tags: ['something']
+title: MDSAP Task 6-16 Device master file
+summary: Determine if the medical device organization has established and maintained a file for each type of device that includes or refers to the location of device specifications, production process specifications, quality assurance procedures, traceability requirements, and packaging, labeling specifications, and when applicable requirements for installation and servicing.
+tags: ['device master record', 'DMR', 'medical device file', 'MDF']
 slug: mdsap-6-16-device-master-file
 ---
 
-<RegLang>Some reg language here</RegLang>
-<QdocList docs={['my first doc', 'my second doc']}/>
+<RegLang>
+Determine if the medical device organization has established and maintained a file for each type of device that includes or refers to the location of device specifications, production process specifications, quality assurance procedures, traceability requirements, and packaging, labeling specifications, and when applicable requirements for installation and servicing.
+</RegLang>
+<QdocList docs={['device master record']}/>
 
 <ReportLang>
+- DMR-XXXX Device Master Record Rev.X
 </ReportLang>
 
-<Subtask actionitem={"Do this because it is important."}>
-Here is some context on what you should do.
+<Subtask actionitem={"Confirm device master records have been sampled in the audit"}>
+The device master record should have already been sampled at the beginning of Chapter 6, especially for <QLink>MDSAP Task 6-3 Controls for the implementation of Selected Production and Service Process(es)</QLink>.  
+We can acknowledge this is only possible to sample if the organization maintains a DMR as an index, or else the team simply say 'yes, we maintain all the required documents'. Teams are not required to maintain an index.
+
+But it is practical both for auditors and teams to have a DMR index, in order to have some top level visibility to what documents are relevant to a specific product.  If a team does not maintain an index, review how it is to be confirmed which specifications, drawings, procedures, etc. are applicable to a product.  This is practical question from an operations standpoint, and every team will have some top-level document or a core set of documents from which all others can be found.
+
+We can also acknowledge that 'DMR' (device master record) is an FDA term from 21 CFR 820, often used interchangeably with the 'MDF' (medical device file) described in ISO 13485.  MDSAP, to be unique it seems, must use yet an another additional term 'Device Master File'. 
 </Subtask>
 
 

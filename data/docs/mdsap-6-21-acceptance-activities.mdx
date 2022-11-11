@@ -1,18 +1,43 @@
 ---
-title: MDSAP Task x-x Task Name
-summary: This is an example task.
-tags: ['something']
+title: MDSAP Task 6-21 Acceptance Activities
+summary: Verify that acceptance activities assure conformity with specifications and are documented.
+tags: ['acceptance activities', 'inspection']
 slug: mdsap-6-21-acceptance-activities
 ---
 
-<RegLang>Some reg language here</RegLang>
-<QdocList docs={['my first doc', 'my second doc']}/>
+<RegLang>
+Verify that acceptance activities assure conformity with specifications and are documented. Confirm that the extent of acceptance activities is commensurate with the risk posed by the device.
+Brazil (ANVISA): Verify that sampling plans are defined and based on valid statistical rationale. Each manufacturer must establish and maintain procedures to ensure that sampling methods are suitable for their intended use and are reviewed regularly. A review of sampling plans should consider the occurrence of nonconforming product, quality audit reports, complaints and other indicators [RDC ANVISA 16/2013: 9.2].
+United States (FDA): Verify that the manufacturer establishes and maintains procedures to ensure that sampling methods are 
+adequate for their intended use and ensure that when changes occur, the sampling plans are reviewed [21 CFR 
+820.250(b)].
+</RegLang>
+<QdocList docs={['device master record', 'sampling procedures']}/>
 
 <ReportLang>
+- DMR-XXX Device Master Record Rev.X
+- Sampling Procedure Rev.X
+- QA-XXXX Quality Inspection Procedure Rev.X
+Inspections evidenced in DHR per Task 6-17.
 </ReportLang>
 
-<Subtask actionitem={"Do this because it is important."}>
-Here is some context on what you should do.
+<Subtask actionitem={"Identify the documents which define the acceptance activities to be performed."}>
+The DHRs will record what acceptance activities were performed, but ideally this can be compared to manufacturing and quality work instructions which define acceptance activities. Confirm these two sets align.  Confirm it is clear what sampling plans are to be applied to each acceptance activity. 
+
+Acceptance records are to contain
+- the activities performed, 
+- the results, 
+- the date, 
+- the signature of the individual(s) conducting the acceptance activities; and 
+- where appropriate the equipment used. 
+
+Link to <QLink>MDSAP 6-8 Process Validation</QLink>: Consider that when sampling plans have been applied and full verification is not implemented, process validation is applicable.
+Note: This task and <QLink>MDSAP Task 6-10 Monitoring and Measuring of Product Conformity</QLink> are partially redundant to each other. 
+</Subtask>
+
+<Subtask actionitem={"Review sampling in the production records applied against established procedures."}>
+Sampling plans are often based on lot size, though special sampling may also take place with fixed sample sizes.  Compare lot sizes in the DHR as needed to confirm sampling (i.e. AQLs) were correctly applied. 
+If the organization has a variable sampling scheme (i.e. reduced, tightened), confirm the correct level was used.
 </Subtask>
 
 

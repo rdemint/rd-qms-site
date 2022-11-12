@@ -1,19 +1,36 @@
 ---
-title: MDSAP Task x-x Task Name
-summary: This is an example task.
-tags: ['something']
+title: MDSAP Task 7-1 Planning activities regarding purchased products and outsourced processes
+summary: Verify that planning activities describe or identify products to purchase and processes to outsource, the specified requirements for purchased products, the requirements for purchasing documentation and records, purchasing resources, the activities for purchased product acceptance, and risk management in supplier selection and purchasing.
+tags: ['purchasing', 'planning']
 slug: mdsap-7-1-planning-purchasing-outsourcing
 ---
 
-<RegLang>Some reg language here</RegLang>
-<QdocList docs={['my first doc', 'my second doc']}/>
+<RegLang>
+Verify that planning activities describe or identify products to purchase and processes to outsource, the specified requirements for purchased products, the requirements for purchasing documentation and records, purchasing resources, the activities for purchased product acceptance, and risk management in supplier selection and purchasing.
+</RegLang>
+<QdocList docs={['device master record']}/>
 
 <ReportLang>
+Organization demonstrates planning for purchased product and outsourced processes as observed in Task 5-7 Design Output and Task 5-16 Design Transfer. 
+Purchased and outsourced materials/services are knowable through review of the device [BOM].
+Requirements communicated to suppliers are established in [document type] and communicated through purchase orders/agreements.
 </ReportLang>
 
-<Subtask actionitem={"Do this because it is important."}>
-Here is some context on what you should do.
+<Subtask actionitem={"Review how it is knowable which materials and services are purchased or outsourced for any given product, and which suppliers are to provide them."}>
+It is to be expected that all raw materials and components for the typical device are purchased. Outsourcing is far less common.
+Consider both custom and noncustom materials, as planning and documentation may differ for these two types. 
+
+For noncustom components, the supplier part number and supplier name are commonly documented on a BOM. 
+
+For custom components the organization commonly develops an internal specification document that is transferred to the supplier.
 </Subtask>
 
+<Subtask actionitem={"Review your previous audit sampling of design output and design transfer.  Ensure the sampling reviewed the overarching process and individual design output  (i.e. spec documents) for purchased and outsourced product."}>
+</Subtask>
 
+This is largely a redundant task.  The benefit can be to make sure a purchasing and outsourcing lens is applied to design output and design transfer. 
+
+We should acknowledge that planning for purchased products and outsourcing occurs as least as early as the development of design outputs and continues through design transfer.
+
+A failure to plan and establish requirements for purchased product is just as easily called a failure of <QLink>MDSAP Task 5-7 Design Output and Design Verification</QLink> or <QLink>MDSAP Task 5-16 Design Transfer</QLink>. 
 

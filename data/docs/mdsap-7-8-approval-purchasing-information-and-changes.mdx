@@ -1,18 +1,41 @@
 ---
-title: MDSAP Task x-x Task Name
-summary: This is an example task.
-tags: ['something']
+title: MDSAP Task 7-8 Verification of the adequacy of purchasing information, specified purchase requirements, and written agreement to notify changes, before their communication to the supplier
+summary: Verify that the medical device organization assures the adequacy of purchasing requirements for products and services that suppliers are to provide, and defines risk management activities and any necessary risk control measures.
+tags: ['change notification', 'purchasing information']
 slug: mdsap-7-8-approval-purchasing-information-and-changes
 ---
 
-<RegLang>Some reg language here</RegLang>
-<QdocList docs={['my first doc', 'my second doc']}/>
+<RegLang>
+Verify that the medical device organization assures the adequacy of purchasing requirements for products and services that suppliers are to provide, and defines risk management activities and any necessary risk control measures.
+Confirm that the medical device organization ensures the adequacy of specified purchase requirements prior to their communication to the supplier and that a written agreement with the supplier is established in which suppliers has to notify the medical device organization about changes in the product.
+Brazil (ANVISA): Confirm that purchase orders are approved by a designated person. This approval, including date and signature, shall be documented [RDC ANVISA 16/2013: 2.5.4].
+</RegLang>
+<QdocList docs={['purchasing procedures']}/>
 
 <ReportLang>
+Describe how Purchasing reviews and sources controlled design information and information from the purchasing system to prepare POs.
 </ReportLang>
 
-<Subtask actionitem={"Do this because it is important."}>
-Here is some context on what you should do.
+<Subtask actionitem={"Review the process of carrying forward design information to the purchasing process."}>
+What is the organization's process for carrying forward design information to the purchasing process so that POs can be created? Does a team member 'approve' a PO prior to release? 
+ 
+Scenario - No information maintained in a purchasing system: How does Purchasing know what to oder? Is there a document type that was reviewed and approved during design transfer specifically to be used to create POs? Or is Purchasing supposed to look at the latest revision of the product BOM and component design specifications?
+
+Scenario - ERP system or other purchasing system: It is more common that the information from design documents is input into an electronic purchasing system. These can be formally, complex ERP systems, or QuickBooks. 
+The challenge with these systems is that they often contain part numbers, revisions, CoA requirements, and other 'purchasing requirements'. That is to say, they contain controlled information but are ubiquitously separate from a team's document control system and approved suppliers list. 
+The team then has the challenge of keeping these systems aligned.  The audit should have already reviewed how documents are controlled and approved, but be sure to review how approved documents are carried forward to the purchasing system. 
+Consider whether the information in the purchasing system require 'verification' against the document control system prior to creation of a PO, or is it a 'push system' where the purchasing system is updated on changes only?
+Often it is relevant to select a few instances to make sure the controlled design documents and information in the purchasing system align. 
+</Subtask>
+
+<Subtask actionitem="Review the process of ensuring inspections or other risk controls are included with POs">
+A risk control might include a requirements for a Certificate of Analysis with specific data.  How is Purchasing aware of this requirement, and where is the information sourced from?
+</Subtask>
+
+<Subtask actionitem="Ensure audit sampling has covered quality agreements">
+Typically quality agreements are reviewed as part of 7-5, because these documents are part of the initial supplier approval process.  
+Ensure that any prior review has considered the requirement for change notification. 
+When standalone agreements are not in place, teams are to incorporate change notification into individual purchase orders or accompanying terms and conditions.
 </Subtask>
 
 

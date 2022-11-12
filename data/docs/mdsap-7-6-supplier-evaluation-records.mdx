@@ -1,19 +1,29 @@
 ---
-title: MDSAP Task x-x Task Name
-summary: This is an example task.
-tags: ['something']
+title: MDSAP Task 7-6 Records of supplier evaluation
+summary: Verify that the medical device organization maintains effective controls over suppliers and product, so that specified requirements continue to be met.
+tags: ['supplier audit']
 slug: mdsap-7-6-supplier-evaluation-records
 ---
 
-<RegLang>Some reg language here</RegLang>
-<QdocList docs={['my first doc', 'my second doc']}/>
+<RegLang>
+Verify that the medical device organization maintains effective controls over suppliers and product, so that specified requirements continue to be met.
+</RegLang>
+<QdocList docs={['supplier files']}/>
 
 <ReportLang>
+- Supplier audit Report, Supplier Name, YYYY-MM-DD
+- Supplier audit Report, Supplier Name, YYYY-MM-DD
 </ReportLang>
 
-<Subtask actionitem={"Do this because it is important."}>
-Here is some context on what you should do.
+<Subtask actionitem={"Review the controls applied to the supplier on an ongoing basis for consistency to the planned controls from supplier evaluation and approval."}>
+If during supplier evaluation it was determined than an annual supplier audit would be required, review recent supplier audit reports. 
+Other review could include updated agreements, review of the supplier's renewed QMS certificates, etc.
+We can acknowledge that one of the most common and important applied controls is inspection of supplier product, yet this gets its own task in <QLink>MDSAP Task 7-10 Verification of purchased products</QLink>.  Therefore, you may just review the administrative controls in the current task, as incoming inspection will be revisited. 
 </Subtask>
+
+The language of this task title is confusing, as the 'records of supplier evaluation' were already reviewed in <QLink>MDSAP Task 7-5 Selection of suppliers...</QLink> where we had to 'Verify that records of supplier evaluations are maintained.'.
+This is further confused by the following task name <QLink>MDSAP Task 7 - Effective controls over suppliers and products</QLink> is not actually about the review of applied ongoing controls, but rather the re-evaluation of suppliers. 
+This task is actually the correct task to review the applied ongoing controls, such as supplier audit.
 
 
 

@@ -29,11 +29,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
           <main
-              className="flex flex-col bg-gradient-to-l from-accent-100 to-slate-100 min-h-[95%]" 
-              >
-              <div className="mx-auto max-w-3xl">
+              className="flex flex-col bg-[url('../public/background_design.svg')] bg-cover bg-center">
+              <div className="backdrop-blur-2xl backdrop-opacity-95">
+                  <div className="mx-auto max-w-3xl">
               <Hero />
-              <div className="h-64 flex flex-col space-y-8 my-6 items-center justify-center w-full">
+                      <div className="h-64 flex flex-col space-y-8 my-6 items-center justify-center w-full">
                   <div className="flex flex-col items-center" >
                           <a href="/blog" className="shadow-inner rounded-md px-4 py-2 w-48 text-center text-slate-700 bg-gradient-to-b from-slate-100 to-slate-200 hover:shadow-md">Blog</a>
                       <p className="text-gray-500 font-light">Expanded and freeform thoughts</p>
@@ -64,7 +64,8 @@ export default function Home() {
                     <div className={`${current === 2 ? 'opacity-100' : 'opacity-50'} bg-gray-400 rounded-lg w-4 h-4 transition-opacity ease-in-out duration-500`}></div>
                 </div>
                   </div>
-</div>
+                  </div>
+              </div>
           </main>
       </div>
 

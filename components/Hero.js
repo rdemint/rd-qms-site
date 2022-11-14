@@ -5,10 +5,10 @@ export default function Hero() {
         <div className="text-center mt-12 mb-6">
             <ReactTypingEffect
                 text={["Design. Build. Train. Audit."]}
-                eraseSpeed={100}
+                eraseSpeed={50}
                 eraseDelay={5000}
                 typingDelay={100}
-                speed={100}
+                speed={75}
                 cursorClassName={"text-4xl sm:text-5xl md:text-6xl text-slate-300"}
 
                 displayTextRenderer={

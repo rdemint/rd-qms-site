@@ -4,10 +4,12 @@ import SearchModal from '@/components/search/SearchModal'
 export default function SidebarLayout({ children }) {
     return (
         <>
-            <div className="pt-8 px-4">
-            <SearchModal />
-                <div className="block md:flex">
+            <div className="pt-8 px-4 flex">
+                <div className="flex-col">
+                    <SearchModal />
                     <SideBarNav />
+                </div>
+                <div className="block">
                     {children}
                 </div>
             </div>

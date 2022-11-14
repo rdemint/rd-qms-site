@@ -8,7 +8,7 @@ import ReportLang from '@/components/docs/ReportLang'
 import Qdoc from '@/components/docs/Qdoc'
 import QdocList from '@/components/docs/QdocList'
 import Subtask from '@/components/docs/Subtask'
-import Qlink from '@/components/docs/QLink'
+import QLink from '@/components/docs/QLink'
 import SidebarLayout from "@/components/layouts/SidebarLayout"
 
 export async function getStaticPaths() {
@@ -34,13 +34,13 @@ export async function getStaticProps(context) {
 }
 
 export default function DocPage({ mdxSource, frontMatter }) {
-    const components = { RegLang, QdocList, ReportLang, Qdoc, Qlink, Subtask }
+    const components = { RegLang, QdocList, ReportLang, Qdoc, QLink, Subtask }
     return (
         
         <SidebarLayout>
         <div className="flex flex-col max-w-7xl px-4">
             <h1 className="text-4xl max-w-3xl text-center pt-8 pb-4 border-b-2 border-rose-200">{frontMatter.title}</h1>
-            <div className="prose pt-8">
+            <div className="prose pt-8 max-w-7xl">
                 <MDXRemote {...mdxSource} components={components}/>
             </div>
         </div>

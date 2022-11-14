@@ -12,7 +12,7 @@ export default function SearchModal() {
   }
   return (
       <div>
-          <button className="my-4 rounded border p-1 border-gray-200 max-w-xs w-72 text-left" onClick={handleSearchClick}>Search</button>
+          <button className="my-4 rounded border p-1 border-gray-200 max-w-xs w-24 md:w-72 text-left" onClick={handleSearchClick}>Search</button>
       <Transition.Root show={open} as={Fragment}>
         <Dialog as="div" className="relative z-10" onClose={setOpen}>
           <Transition.Child

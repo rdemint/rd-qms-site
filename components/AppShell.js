@@ -5,8 +5,8 @@ export default function AppShell({ children }) {
 	return (
 		<div className="min-h-screen flex flex-col">
 			<Header />
-			<main>{children}</main>
-			<Footer />
+			<main className="grow">{children}</main>
+			<Footer className="grow-0"/>
 		</div>
 )
 

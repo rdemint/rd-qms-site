@@ -1,13 +1,9 @@
 import { useState, Fragment } from 'react'
-import { Dialog, Menu, Transition } from '@headlessui/react'
+import { Dialog, Transition } from '@headlessui/react'
 import Link from 'next/link'
 import { DocsNavList } from '@/data/docs/docsNavList'
-import SearchModal from '@/components/search/SearchModal'
 import { XMarkIcon, Bars3BottomLeftIcon } from '@heroicons/react/20/solid'
 
-function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-}
 
 function NavItems() {
     return (
@@ -51,13 +47,13 @@ export default function SidebarNav() {
         <section id="sidebars">
             <button
                 type="button"
-                className="focus:ring-primary text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset md:hidden hover:text-gray-800 hover:bg-gray-100 rounded"
+                className="mt-2 mb-12 focus:ring-primary text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset md:hidden hover:text-gray-800 hover:bg-gray-100 rounded"
                 onClick={() => setSidebarOpen(true)}
             >
                 <span className="sr-only">Open sidebar</span>
                 
-                <Bars3BottomLeftIcon className="h-6 w-6" aria-hidden="true" />
-            </button>
+                <Bars3BottomLeftIcon className="h-8 w-8" aria-hidden="true" />
+                </button>
             <section id="mobile-sidebar">
                 <Transition.Root show={sidebarOpen} as={Fragment}>
                     <Dialog as="div" className="relative z-40 md:hidden" onClose={setSidebarOpen}>
@@ -114,9 +110,6 @@ export default function SidebarNav() {
             </section>
             <section id="desktop-sidebar">
                 <div className="t-0 sticky hidden h-full w-96 pl-4 md:block">
-                    {/*<div className="m-2">*/}
-                    {/*    <SearchModal />*/}
-                    {/*</div>*/}
                     <div className="flex flex-grow flex-col overflow-y-auto border-gray-200">
                         <div className="flex flex-grow flex-col">
                             <NavItems />

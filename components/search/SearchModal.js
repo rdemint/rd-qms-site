@@ -11,15 +11,10 @@ export default function SearchModal() {
     setOpen(true)
   }
   return (
-    <div>
-      <input
-        type="text"
-        onClick={handleSearchClick}
-        className="rounded border p-1 mb-1 border-gray-200 max-w-xs"
-        placeholder="Search"
-      />
+      <div>
+          <button className="my-4 rounded border p-1 border-gray-200 max-w-xs w-72 text-left" onClick={handleSearchClick}>Search</button>
       <Transition.Root show={open} as={Fragment}>
-        <Dialog as="div" className="relative z-10" initialFocus={cancelButtonRef} onClose={setOpen}>
+        <Dialog as="div" className="relative z-10" onClose={setOpen}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -57,7 +52,6 @@ export default function SearchModal() {
                       type="button"
                       className="m-2 inline-flex justify-center rounded border bg-white p-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:text-sm"
                       onClick={() => setOpen(false)}
-                      ref={cancelButtonRef}
                     >
                       Cancel
                     </button>
@@ -68,7 +62,8 @@ export default function SearchModal() {
             </div>
           </div>
         </Dialog>
-      </Transition.Root>
+          </Transition.Root>
+          
     </div>
   )
 }

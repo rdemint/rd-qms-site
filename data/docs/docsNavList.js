@@ -79,7 +79,7 @@ export const DocsNavList = [
             { name: '4-1 Adverse events', slug: '/docs/mdsap-4-1-adverse-events' },
             { name: '4-2 Advisory notices', slug: '/docs/mdsap-4-2-advisory-notices' },
             { name: '5-1 Identification of devices', slug: '/docs/mdsap-5-1-identification-of-devices' },
-            { name: '5-2 Design project selection', slug; '/docs/mdsap-5-2-design-project-selection'},
+            { name: '5-2 Design project selection', slug: '/docs/mdsap-5-2-design-project-selection'},
             { name: '5-3 Design planning', slug: '/docs/mdsap-5-3-design-planning' },
             { name: '5-4 Design process', slug: '/docs/mdsap-5-4-design-process' },
             { name: '5-5 Design input', slug: '/docs/mdsap-5-5-design-input' },

@@ -11,6 +11,6 @@ export default function DocsPage() {
                 <p>This space is intended to answer specific, common questions about wide-ranging topics.  The plan is still being built out as far as what to prioritize to write about.</p>
                 <p>Please <span><a href="https://www.linkedin.com/in/raines-demint/">reach out</a></span> with any specific requests for topics and questions.</p>
                 </div>
-            </SidebarLayout>
+        </SidebarLayout>
 )
 }

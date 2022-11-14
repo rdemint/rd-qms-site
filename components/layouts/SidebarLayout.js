@@ -6,11 +6,11 @@ export default function SidebarLayout({ children }) {
         <>
             <div className="pt-8 px-4">
             <SearchModal />
-        <div className="block md:flex">
-            <SideBarNav />
-            {children}
+                <div className="block md:flex">
+                    <SideBarNav />
+                    {children}
                 </div>
-</div>
+            </div>
 </>
     )
 }

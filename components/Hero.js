@@ -1,6 +1,6 @@
 export default function Hero() {
     return (
-        <div className="text-center my-6">
+        <div className="text-center mt-12 mb-6">
             <h1 className="text-4xl font-bold tracking-tight text-gray-700 sm:text-5xl md:text-6xl">
                 <span className="block xl:inline">Design</span>
                 <span className="font-light text-gray-500">. </span>

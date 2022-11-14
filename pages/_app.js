@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import 'instantsearch.css/themes/satellite.css'
 import AppShell from '@/components/AppShell'
 import algoliasearch from 'algoliasearch/lite'
 import { InstantSearch } from 'react-instantsearch-hooks-web';

@@ -28,21 +28,23 @@ export default function Home() {
         <meta name="description" content="Medical device quality management systems" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className="flex flex-col max-w-3xl mx-auto">
+          <main
+              className="flex flex-col bg-gradient-to-l from-accent-100 to-slate-100 min-h-[95%]" 
+              >
+              <div className="mx-auto max-w-3xl">
               <Hero />
-              <div className="flex flex-col space-y-8 my-6 items-center w-full">
-              <div className="flex flex-col items-center" >
-                  <a href="/blog" className="rounded-md border border-accent-700 px-4 py-2 w-48 text-center text-accent-900 bg-accent-100 hover:shadow-md">Blog</a>
-                  <p className="text-gray-500 font-light">Expanded and freeform thoughts</p>
-              </div>                                                                    
+              <div className="h-64 flex flex-col space-y-8 my-6 items-center justify-center w-full">
+                  <div className="flex flex-col items-center" >
+                          <a href="/blog" className="shadow-inner rounded-md px-4 py-2 w-48 text-center text-slate-700 bg-gradient-to-b from-slate-100 to-slate-200 hover:shadow-md">Blog</a>
+                      <p className="text-gray-500 font-light">Expanded and freeform thoughts</p>
+                  </div>                                                                    
                                                                                         
-                  <div className="flex flex-col items-center">
-                      <a href="/docs" className="rounded-md border border-accent-700 px-4 py-2 w-48 text-center text-accent-900 bg-accent-100 hover:shadow-md">Docs</a>
-                  <p className="text-gray-500 font-light">Bite-sized learning and topic guides</p>
+                      <div className="flex flex-col items-center">
+                          <a href="/docs" className="shadow-inner shadow-slate-500 rounded-md px-4 py-2 w-48 text-center text-slate-50 bg-gradient-to-b from-slate-700 to-slate-600 hover:shadow-md">Docs</a>
+                      <p className="text-gray-500 font-light">Bite-sized learning and topic guides</p>
+                  </div>
               </div>
-              </div>
-              <div className="my-6">
+              <div className="h-24 flex flex-col justify-center my-6">
                   <p className="text-primary-900 text-center">I build tools for medtech teams so that they can get to market faster and then thrive there.</p>
                   <p className="text-gray-500 font-light text-center">What does your medical device team need to succeed? Reach out on
                       <span>
@@ -50,7 +52,7 @@ export default function Home() {
                       </span>
                       </p>
               </div>
-              <div id="carousel-container"className="flex flex-col align-items mt-12">
+              <div id="carousel-container"className="flex flex-col align-items h-24 mb-12">
                 <div className="relative flex justify-center h-10">
                           <div className={`${current === 0 ? 'opacity-100' : 'opacity-0'} absolute transition-opacity ease-in-out duration-500 text-accent-900 text-md text-center font-light text-lg`}>"{catchphrases[0]}"</div>
                           <div className={`${current === 1 ? 'opacity-100' : 'opacity-0'} absolute transition-opacity ease-in-out duration-500 text-accent-900 text-md text-center font-light text-lg`}>"{catchphrases[1]}"</div>
@@ -61,7 +63,8 @@ export default function Home() {
                     <div className={`${current === 1 ? 'opacity-100' : 'opacity-50'} bg-gray-400 rounded-lg w-4 h-4 transition-opacity ease-in-out duration-500`}></div>
                     <div className={`${current === 2 ? 'opacity-100' : 'opacity-50'} bg-gray-400 rounded-lg w-4 h-4 transition-opacity ease-in-out duration-500`}></div>
                 </div>
-               </div>
+                  </div>
+</div>
           </main>
       </div>
 

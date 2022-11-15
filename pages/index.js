@@ -29,8 +29,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
           <main
-              className="flex flex-col bg-[url('../public/background_design.svg')] bg-cover bg-center">
-              <div className="backdrop-blur-2xl backdrop-opacity-95">
+              className="flex flex-col bg-[url('../public/background_design_o20.svg')] bg-cover bg-center">
+              <div className="backdrop-blur-md">
                   <div className="mx-auto max-w-3xl">
               <Hero />
                       <div className="h-64 flex flex-col space-y-8 my-6 items-center justify-center w-full">

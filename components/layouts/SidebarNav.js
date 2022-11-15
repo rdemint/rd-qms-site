@@ -47,7 +47,7 @@ export default function SidebarNav() {
         <section id="sidebars" className="max-h-screen overflow-auto">
             <button
                 type="button"
-                className="mt-2 mb-12 focus:ring-primary text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset md:hidden hover:text-gray-800 hover:bg-gray-100 rounded"
+                className="mt-2 mb-12 focus:ring-primary text-slate-700 focus:outline-none focus:ring-2 focus:ring-inset md:hidden hover:text-slate-800 hover:bg-gray-100 rounded"
                 onClick={() => setSidebarOpen(true)}
             >
                 <span className="sr-only">Open sidebar</span>

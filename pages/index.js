@@ -30,7 +30,7 @@ export default function Home() {
       </Head>
           <main
               className="flex flex-col bg-[url('../public/background_design_o20.svg')] bg-cover bg-center">
-              <div className="backdrop-blur-md">
+              <div className="backdrop-blur-sm">
                   <div className="mx-auto max-w-3xl">
               <Hero />
                       <div className="h-64 flex flex-col space-y-8 my-6 items-center justify-center w-full">

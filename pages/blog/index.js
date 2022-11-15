@@ -13,8 +13,9 @@ export async function getStaticProps() {
 
 export default function BlogHome({posts}) {
     return (
-        <div className="bg-[url('../public/background_design_o20.svg')]">
-            <div className="max-w-3xl mx-auto backdrop-blur backdrop-opacity-80">
+        <div className="bg-[url('../public/background_design_o20.svg')] bg-cover bg-center">
+            <div className="backdrop-blur-md">
+            <div className="max-w-3xl mx-auto">
             <h2 className="text-4xl tracking-tight font-medium text-slate-800 pt-8 pb-4">All posts</h2>
             <p className="text-slate-700">Where I write on medtech, quality management systems, and software.</p>
             <p className="text-gray-500">Looking for bite-sized info on specific topics?  Head over to the <span className="text-primary-900"><Link href="/docs">Docs.</Link></span></p>
@@ -22,7 +23,7 @@ export default function BlogHome({posts}) {
             <ul role="list" className="pt-6 space-y-9">
                 {posts.map(
                     (post) => (
-                        <li className="text-2xl bg-gradient-to-b from-slate-50 to-white text-slate-800 border-l-2 border-accent-600 px-6 py-6  hover:border-accent-900 shadow" key={post.title}>
+                        <li className="text-2xl bg-white text-slate-800 border-l-2 border-accent-600 px-6 py-6  hover:border-accent-900 shadow" key={post.title}>
                             <Link href={`/blog/${post.slug}`}>
                                 <a className="hover:text-gray-800">
                                     {post.title}
@@ -40,6 +41,7 @@ export default function BlogHome({posts}) {
                     )
                 )}
                 </ul>
+                </div>
             </div>
 </div>
 )

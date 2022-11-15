@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function SearchHit({ hit }) {
   return (
-    <article>
+    <article className="my-4">
         <Link href={`/docs/${hit.slug}`}>
           <a className="">
                   <Highlight attribute="title" hit={hit} className="text-lg font-medium hover:underline hover:decoration-slate-200 hover:underline-offset-4 "/>

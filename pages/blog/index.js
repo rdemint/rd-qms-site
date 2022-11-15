@@ -13,10 +13,9 @@ export async function getStaticProps() {
 
 export default function BlogHome({posts}) {
     return (
-
-        <Container>
-<div className="max-w-3xl mx-auto">
-            <h2 className="text-4xl tracking-tight font-medium pt-8 pb-4">All posts</h2>
+        <div className="bg-[url('../public/background_design_o20.svg')]">
+            <div className="max-w-3xl mx-auto backdrop-blur backdrop-opacity-80">
+            <h2 className="text-4xl tracking-tight font-medium text-slate-800 pt-8 pb-4">All posts</h2>
             <p className="text-slate-700">Where I write on medtech, quality management systems, and software.</p>
             <p className="text-gray-500">Looking for bite-sized info on specific topics?  Head over to the <span className="text-primary-900"><Link href="/docs">Docs.</Link></span></p>
 
@@ -42,6 +41,6 @@ export default function BlogHome({posts}) {
                 )}
                 </ul>
             </div>
-        </Container>
+</div>
 )
 }

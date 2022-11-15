@@ -7,22 +7,22 @@ import { XMarkIcon, Bars3BottomLeftIcon } from '@heroicons/react/20/solid'
 
 function NavItems() {
     return (
-        <nav className="flex-1 space-y-1 px-2 pb-4">
+        <nav className="space-y-1 px-2 pb-4">
             {DocsNavList.map((section, i) => {
                 return (
                     <div key={section.name}>
-                        <h2 className="text-2xl font-semibold text-gray-900">{section.name}</h2>
+                        <h2 className="text-2xl font-semibold text-slate-800">{section.name}</h2>
 
                         <div className="pl-3 ml-1 my-1">
                             {section.children.map((child, i) => {
                                 return (
                                     <div className="mb-1" key={child.name}>
-                                        <h2 className="text-xl font-medium mb-1 text-gray-800">{child.name}</h2>
+                                        <h2 className="text-xl font-medium mb-1 text-slate-700">{child.name}</h2>
                                         {child.children.map((topic, i) => {
                                             return (
                                                 <div key={topic.name} className="pl-2 border-l border-gray-200 hover:border-accent-900 ml-2">
                                                     <Link href={topic.slug}>
-                                                        <a className="text-md tracking-tight text-zinc-700 hover:text-gray-900">
+                                                        <a className="text-md tracking-tight text-zinc-700 hover:text-gray-900 whitespace-nowrap">
                                                             {topic.name}
                                                         </a>
                                                     </Link>
@@ -44,7 +44,7 @@ export default function SidebarNav() {
     const [sidebarOpen, setSidebarOpen] = useState(false)
 
     return (
-        <section id="sidebars">
+        <section id="sidebars" className="max-h-screen overflow-auto">
             <button
                 type="button"
                 className="mt-2 mb-12 focus:ring-primary text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset md:hidden hover:text-gray-800 hover:bg-gray-100 rounded"
@@ -110,7 +110,7 @@ export default function SidebarNav() {
             </section>
             <section id="desktop-sidebar">
                 <div className="t-0 sticky hidden h-full w-96 pl-4 md:block">
-                    <div className="flex flex-grow flex-col overflow-y-auto border-gray-200">
+                    <div className="flex flex-grow flex-col border-gray-200">
                         <div className="flex flex-grow flex-col">
                             <NavItems />
                         </div>

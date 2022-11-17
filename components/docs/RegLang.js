@@ -1,3 +1,3 @@
 export default function RegLangBox({ children }) {
-  return <div className="rounded border border-r border-2 border-gray-200 bg-gray-100 p-4 prose max-w-7xl">{children}</div>
+  return <div className="rounded bg-slate-100  text-slate-800 p-4 prose max-w-7xl">{children}</div>
 }

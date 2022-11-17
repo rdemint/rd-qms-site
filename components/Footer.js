@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const navigation = {
     main: [
         { name: 'Blog', href: '/blog' },
@@ -43,10 +45,10 @@ export default function Footer() {
                         </div>
                     ))}
                 </nav>
-                <div className="mt-8 flex justify-center items-center space-x-6">
+                <div className="mt-8 flex justify-center space-x-6 border">
                     <a key="linkedin" href="https://linkedin.com/in/raines-demint" className="text-gray-400 hover:text-gray-500">
                         <span className="sr-only">{"LinkedIn"}</span>
-                        <img src="/linkedin-icon.svg" className="h-5 border saturate-0 opacity-60 hover:opacity-80" />
+                        <Image src="/linkedin-icon.svg" className="border saturate-0 opacity-60 hover:opacity-80" height="20" width="20" alt="LinkedIn Logo"/>
                     </a>
                     {navigation.social.map((item) => (
                         <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">

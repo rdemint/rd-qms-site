@@ -1,8 +1,7 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Hero from "@/components/Hero"
-import Container from "@/components/Container"
 import { useState, useEffect } from 'react'
-import { Transition } from '@headlessui/react'
 
 
 const catchphrases = [
@@ -35,20 +34,26 @@ export default function Home() {
               <Hero />
                       <div className="h-64 flex flex-col space-y-8 my-6 items-center justify-center w-full">
                   <div className="flex flex-col items-center" >
-                          <a href="/blog" className="shadow-inner rounded-md px-4 py-2 w-48 text-center text-slate-700 bg-gradient-to-b from-slate-100 to-slate-200 hover:shadow-md">Blog</a>
+                              <Link href="/blog">
+                                  <a  className="shadow-inner rounded-md px-4 py-2 w-48 text-center text-slate-700 bg-gradient-to-b from-slate-100 to-slate-200 hover:shadow-md">Blog</a>
+                              </Link>
                       <p className="text-gray-500 font-light">Expanded and freeform thoughts</p>
                   </div>                                                                    
                                                                                         
                       <div className="flex flex-col items-center">
-                          <a href="/docs" className="shadow-inner shadow-slate-500 rounded-md px-4 py-2 w-48 text-center text-slate-50 bg-gradient-to-b from-slate-700 to-slate-600 hover:shadow-md">Docs</a>
+                              <Link href="/docs">
+                                  <a className="shadow-inner shadow-slate-500 rounded-md px-4 py-2 w-48 text-center text-slate-50 bg-gradient-to-b from-slate-700 to-slate-600 hover:shadow-md">Docs</a>
+                              </Link>
                       <p className="text-gray-500 font-light">Bite-sized learning and topic guides</p>
                   </div>
               </div>
               <div className="h-24 flex flex-col justify-center my-6">
                   <p className="text-primary-900 text-center">I build tools for medtech teams so that they can get to market faster and then thrive there.</p>
                   <p className="text-gray-500 font-light text-center">What does your medical device team need to succeed? Reach out on
-                      <span>
-                          <a className="text-primary-800 hover:text-primary-500" href="linkedin.com/raines-demint"> LinkedIn</a>
+                              <span>
+                                  <Link href="linkedin.com/raines-demint">
+                                      <a className="text-primary-800 hover:text-primary-500"> LinkedIn</a>
+                                  </Link>
                       </span>
                       </p>
               </div>

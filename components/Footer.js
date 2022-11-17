@@ -16,7 +16,7 @@ const navigation = {
         //},
         {
             name: 'GitHub',
-            href: '#',
+            href: 'https://github.com/rdemint',
             icon: (props) => (
                 <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
                     <path
@@ -46,7 +46,7 @@ export default function Footer() {
                 <div className="mt-8 flex justify-center items-center space-x-6">
                     <a key="linkedin" href="https://linkedin.com/in/raines-demint" className="text-gray-400 hover:text-gray-500">
                         <span className="sr-only">{"LinkedIn"}</span>
-                        <img src="linkedin-icon.svg" className="h-5 border saturate-0 opacity-60 hover:opacity-80" />
+                        <img src="/linkedin-icon.svg" className="h-5 border saturate-0 opacity-60 hover:opacity-80" />
                     </a>
                     {navigation.social.map((item) => (
                         <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">

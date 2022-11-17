@@ -1,43 +1,6 @@
 export const DocsNavList = [
   {
-    name: 'Articles',
-    children: [
-      {
-        name: 'Change Control',
-        slug: 'change-control',
-        children: [
-          {
-            name: 'Specification documents',
-            slug: '/docs/specification-document-purpose',
-          },
-          {
-            name: 'Change control',
-            slug: '/docs/change-control-foundations',
-          },
-        ],
-      },
-      {
-        name: 'Design Control',
-        slug: 'design-control',
-        children: [
-          {
-            name: 'Design planning',
-            slug: '/docs/design-control-planning',
-          },
-          {
-            name: 'Design inputs',
-            slug: '/docs/design-inputs',
-          },
-          {
-            name: 'Design outputs',
-            slug: '/docs/design-outputs',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    name: 'References',
+    name: 'Guides',
     children: [
       {
         name: 'MDSAP',

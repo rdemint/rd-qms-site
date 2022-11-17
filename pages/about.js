@@ -7,7 +7,7 @@ export default function About() {
                 <div className="flex justify-center max-w-3xl mx-auto bg-white bg-opacity-80">
                 <div class="prose pt-8">
                 <h2 className="text-slate-800">About Raines</h2>
-                <p>Raines has been serving medical device teams since 2014, and has felt the challenges of the industry first-hand. He channels his experiences (positive and negative) into his mission to improve the way quality management systems are designed, built, maintained, and audited.</p>
+                <p>Raines has been serving medical device teams since 2014, and has felt the challenges of the industry first-hand. He channels his experiences into his mission to improve the way quality management systems are designed, built, maintained, and audited.</p>
                 <p>Raines believes;</p>
                 <ul>
                     <li>The QMS should serve as a framework, not busywork.</li>

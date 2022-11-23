@@ -5,7 +5,8 @@ import { DocsNavList } from '@/data/docs/docsNavList'
 import { XMarkIcon, Bars3BottomLeftIcon } from '@heroicons/react/20/solid'
 
 
-function NavItems() {
+function NavItems({setSidebarOpen}) {
+
     return (
         <nav className="space-y-1 px-2 pb-4">
             {DocsNavList.map((section, i) => {
@@ -22,7 +23,7 @@ function NavItems() {
                                             return (
                                                 <div key={topic.name} className="pl-2 border-l border-gray-200 hover:border-accent-900 ml-2">
                                                     <Link href={topic.slug}>
-                                                        <a className="text-md tracking-tight text-zinc-700 hover:text-gray-900 whitespace-nowrap">
+                                                        <a onClick={()=> setSidebarOpen(false)} className="text-md tracking-tight text-zinc-700 hover:text-gray-900 whitespace-nowrap">
                                                             {topic.name}
                                                         </a>
                                                     </Link>
@@ -100,7 +101,7 @@ export default function SidebarNav() {
                                         </div>
                                     </Transition.Child>
                                     <div className="pl-6">
-                                        <NavItems />
+                                        <NavItems setSidebarOpen={setSidebarOpen}/>
                                     </div>
                                 </Dialog.Panel>
                             </Transition.Child>
@@ -112,7 +113,7 @@ export default function SidebarNav() {
                 <div className="t-0 sticky hidden max-h-screen w-96 pl-4 md:block md:overflow-y-auto">
                     <div className="flex flex-grow flex-col border-gray-200">
                         <div className="flex flex-grow flex-col">
-                            <NavItems />
+                            <NavItems setSidebarOpen={setSidebarOpen} />
                         </div>
                     </div>
                 </div>

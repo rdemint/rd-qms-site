@@ -28,7 +28,7 @@ export default function SearchModal() {
           </Transition.Child>
 
           <div className="fixed inset-0 z-10 overflow-y-auto">
-            <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+            <div className="flex justify-center min-h-full p-4 sm:p-0">
               <Transition.Child
                 as={Fragment}
                 enter="ease-out duration-300"
@@ -38,23 +38,27 @@ export default function SearchModal() {
                 leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                 leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
               >
-                <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-slate-50 px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:max-w-[65%] sm:p-6">
+                <Dialog.Panel className="relative transform rounded-lg bg-slate-50 px-4 pt-5 pb-4 shadow-xl transition-all sm:my-8 max-w-[90%] sm:p-6">
                   <div>
-                    <div className="mt-3 text-center sm:mt-5">
-                      <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-slate-800">
+                    <div className="mt-3 sm:mt-5">
+                      <Dialog.Title as="h3" className="text-lg font-medium text-slate-800">
                         Search the docs
                       </Dialog.Title>
                     </div>
                   </div>
-                  <div className="spacing-x-4 flex flex-row items-center justify-between">
-                    <AlgoliaSearchBox />
-                    <button
-                      type="button"
-                      className="m-2 inline-flex justify-center rounded border bg-white p-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:text-sm"
-                      onClick={() => setOpen(false)}
-                    >
-                      Cancel
-                    </button>
+                  <div className="flex flex-col sm:flex-row sm:space-x-4 sm:items-center sm:justify-between">
+                    <div className='w-48 sm:w-96'>
+                      <AlgoliaSearchBox />
+                    </div>
+                    <div>
+                      <button
+                        type="button"
+                        className="my-2 inline-flex justify-center rounded border bg-white p-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:text-sm"
+                        onClick={() => setOpen(false)}
+                      >
+                        Cancel
+                      </button>
+                    </div>
                   </div>
                   <Hits hitComponent={SearchHit} />
                 </Dialog.Panel>

@@ -4,7 +4,7 @@
 export default function DocsPage() {
     return (
         <SidebarLayout>
-                <div className="flex flex-col max-w-7xl px-4 prose">
+                <div className="flex flex-col max-w-7xl prose">
                 
                 <h2 className="text-4xl text-slate-700">Welcome to the docs</h2>
                 <p>I intend for this to be a place for guides and bite-sized learning on medical device quality management 🚀.</p>

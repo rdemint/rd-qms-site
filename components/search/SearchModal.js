@@ -27,7 +27,7 @@ export default function SearchModal() {
             <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
           </Transition.Child>
 
-          <div className="fixed inset-0 z-10 overflow-y-auto">
+          <div className="fixed inset-0 z-10">
             <div className="flex justify-center min-h-full p-4 sm:p-0">
               <Transition.Child
                 as={Fragment}

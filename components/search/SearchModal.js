@@ -28,7 +28,7 @@ export default function SearchModal() {
           </Transition.Child>
 
           <div className="fixed inset-0 z-10">
-            <div className="flex justify-center min-h-full p-4 sm:p-0">
+            <div className="flex justify-center p-4 sm:p-0">
               <Transition.Child
                 as={Fragment}
                 enter="ease-out duration-300"
@@ -60,7 +60,9 @@ export default function SearchModal() {
                       </button>
                     </div>
                   </div>
-                  <Hits hitComponent={SearchHit} />
+                  <div className='max-h-screen overflow-y-auto'>
+                    <Hits hitComponent={SearchHit} />
+                  </div>
                 </Dialog.Panel>
               </Transition.Child>
             </div>

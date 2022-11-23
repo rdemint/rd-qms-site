@@ -53,7 +53,7 @@ export default function SearchModal() {
                     <div>
                       <button
                         type="button"
-                        className="my-2 inline-flex justify-center rounded border bg-white p-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:text-sm"
+                        className="w-24 my-2 inline-flex justify-center rounded border bg-white p-2 text-base font-medium text-sky-700 shadow-sm hover:bg-sky-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 sm:text-sm"
                         onClick={() => setOpen(false)}
                       >
                         Cancel

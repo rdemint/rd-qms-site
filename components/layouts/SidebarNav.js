@@ -5,7 +5,8 @@ import { DocsNavList } from '@/data/docs/docsNavList'
 import { XMarkIcon, Bars3BottomLeftIcon } from '@heroicons/react/20/solid'
 
 
-function NavItems() {
+function NavItems({setSidebarOpen}) {
+
     return (
         <nav className="space-y-1 px-2 pb-4">
             {DocsNavList.map((section, i) => {
@@ -22,7 +23,7 @@ function NavItems() {
                                             return (
                                                 <div key={topic.name} className="pl-2 border-l border-gray-200 hover:border-accent-900 ml-2">
                                                     <Link href={topic.slug}>
-                                                        <a className="text-md tracking-tight text-zinc-700 hover:text-gray-900 whitespace-nowrap">
+                                                        <a onClick={()=> setSidebarOpen(false)} className="text-md tracking-tight text-zinc-700 hover:text-gray-900 whitespace-nowrap">
                                                             {topic.name}
                                                         </a>
                                                     </Link>
@@ -44,10 +45,10 @@ export default function SidebarNav() {
     const [sidebarOpen, setSidebarOpen] = useState(false)
 
     return (
-        <section id="sidebars" className="max-h-screen overflow-auto">
+        <section id="sidebars" className="max-h-screen">
             <button
                 type="button"
-                className="mt-2 mb-12 focus:ring-primary text-slate-700 focus:outline-none focus:ring-2 focus:ring-inset md:hidden hover:text-slate-800 hover:bg-gray-100 rounded"
+                className="mb-12 focus:ring-primary text-slate-700 focus:outline-none focus:ring-2 focus:ring-inset md:hidden hover:text-slate-800 hover:bg-gray-100 rounded"
                 onClick={() => setSidebarOpen(true)}
             >
                 <span className="sr-only">Open sidebar</span>
@@ -78,7 +79,7 @@ export default function SidebarNav() {
                                 leaveFrom="translate-x-0"
                                 leaveTo="-translate-x-full"
                             >
-                                <Dialog.Panel className="relative flex w-full max-w-[65%] flex-1 flex-col overflow-y-auto overflow-x-hidden bg-white pt-5 pb-4">
+                                <Dialog.Panel className="relative flex w-full max-w-[85%] flex-1 flex-col overflow-y-auto overflow-y-auto bg-white pt-5 pb-4">
                                     <Transition.Child
                                         as={Fragment}
                                         enter="ease-in-out duration-300"
@@ -100,7 +101,7 @@ export default function SidebarNav() {
                                         </div>
                                     </Transition.Child>
                                     <div className="pl-6">
-                                        <NavItems />
+                                        <NavItems setSidebarOpen={setSidebarOpen}/>
                                     </div>
                                 </Dialog.Panel>
                             </Transition.Child>
@@ -109,10 +110,10 @@ export default function SidebarNav() {
                 </Transition.Root>
             </section>
             <section id="desktop-sidebar">
-                <div className="t-0 sticky hidden h-full w-96 pl-4 md:block">
+                <div className="t-0 sticky hidden max-h-screen w-96 pl-4 md:block md:overflow-y-auto">
                     <div className="flex flex-grow flex-col border-gray-200">
                         <div className="flex flex-grow flex-col">
-                            <NavItems />
+                            <NavItems setSidebarOpen={setSidebarOpen} />
                         </div>
                     </div>
                 </div>

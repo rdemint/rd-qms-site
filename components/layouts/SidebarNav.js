@@ -22,7 +22,7 @@ function NavItems({setSidebarOpen}) {
                                         {child.children.map((topic, i) => {
                                             return (
                                                 <div key={topic.name} className="pl-2 border-l border-gray-200 hover:border-accent-900 ml-2">
-                                                    <Link href={topic.slug}>
+                                                    <Link href={`/${topic.slug}`}>
                                                         <a onClick={()=> setSidebarOpen(false)} className="text-md tracking-tight text-zinc-700 hover:text-gray-900 whitespace-nowrap">
                                                             {topic.name}
                                                         </a>

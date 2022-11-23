@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Header() {
 
 return(
-    <div className="flex items-center justify-between border-b border-accent-100 shadow-inner shadow-slate-400 p-6">
+    <div className="flex w-full items-center justify-between border-b border-accent-100 shadow-inner shadow-slate-400 p-6">
         <Link href="/#">
             <a className="text-primary-900">RAINES DEMINT</a>
         </Link>

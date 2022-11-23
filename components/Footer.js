@@ -34,18 +34,18 @@ const navigation = {
 
 export default function Footer() {
     return (
-        <footer className="bg-white grow-0">
-            <div className="mx-auto max-w-7xl overflow-hidden py-8 px-4 sm:px-6 lg:px-8">
-                <nav className="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+        <footer className="bg-white">
+            <div className="mx-auto max-w-7xl overflow-hidden py-2 px-4 sm:px-6 lg:px-8">
+                <nav className="mx-4 flex flex-wrap justify-center" aria-label="Footer">
                     {navigation.main.map((item) => (
-                        <div key={item.name} className="px-5 py-2">
+                        <div key={item.name} className="px-5 py-1">
                             <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
                                 {item.name}
                             </a>
                         </div>
                     ))}
                 </nav>
-                <div className="mt-8 flex justify-center space-x-6">
+                <div className="mt-4 flex justify-center space-x-6">
                     <a key="linkedin" href="https://linkedin.com/in/raines-demint" className="text-gray-400 hover:text-gray-500">
                         <span className="sr-only">{"LinkedIn"}</span>
                         <img src="/linkedin-icon.svg" className="border saturate-0 opacity-60 hover:opacity-80 h-6 w-5" alt="LinkedIn Logo"/>
@@ -57,7 +57,7 @@ export default function Footer() {
                         </a>
                     ))}
                 </div>
-                <p className="mt-8 text-center text-base text-gray-400">&copy; 2022 QA LADDER, LLC. All rights reserved.</p>
+                <p className="mt-2 text-center text-base text-gray-300">&copy; 2022 QA LADDER, LLC. All rights reserved.</p>
             </div>
         </footer>
 

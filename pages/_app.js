@@ -12,6 +12,7 @@ function MyApp({ Component, pageProps }) {
         <>
         <Head>
             <link rel="icon" href="/rd_favicon.png" type="image/png"/>
+            <title>Medical Device Quality Management Systems</title>
         </Head>
         <InstantSearch searchClient={searchClient} indexName="qms_data_index">
         <AppShell>
